@@ -1,0 +1,117 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckfi162tonlsw"]
+
+[ext_resource type="Script" path="res://addons/DolphinLog/script/LogWindow.cs" id="1_kq6u4"]
+
+[node name="OutputWindow" type="Control" node_paths=PackedStringArray("ClearButton", "CollapseButton", "LogContainer", "LockScrollCheckButton", "ClearOnStartButton", "InfoCheckBox", "DebugCheckBox", "WarnCheckBox", "ErrorCheckBox", "ScrollContainer", "SearchText")]
+custom_minimum_size = Vector2(1100, 0)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kq6u4")
+ClearButton = NodePath("HBoxContainer/ClearButton")
+CollapseButton = NodePath("HBoxContainer/CollapseButton")
+LogContainer = NodePath("Panel/VBoxContainer/ScrollContainer/VBoxContainer")
+LockScrollCheckButton = NodePath("HBoxContainer/CheckButton")
+ClearOnStartButton = NodePath("HBoxContainer/CheckButton2")
+InfoCheckBox = NodePath("HBoxContainer2/CheckBox")
+DebugCheckBox = NodePath("HBoxContainer2/CheckBox2")
+WarnCheckBox = NodePath("HBoxContainer2/CheckBox3")
+ErrorCheckBox = NodePath("HBoxContainer2/CheckBox4")
+ScrollContainer = NodePath("Panel/VBoxContainer/ScrollContainer")
+SearchText = NodePath("LineEdit")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+offset_right = 127.0
+offset_bottom = 40.0
+
+[node name="ClearButton" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "Clear"
+expand_icon = true
+
+[node name="CollapseButton" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "Collapse"
+expand_icon = true
+
+[node name="CheckButton2" type="CheckButton" parent="HBoxContainer"]
+layout_mode = 2
+button_pressed = true
+text = "Clear On Start"
+
+[node name="CheckButton" type="CheckButton" parent="HBoxContainer"]
+layout_mode = 2
+button_pressed = true
+text = "Lock Scroll"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -320.0
+offset_bottom = 40.0
+grow_horizontal = 0
+
+[node name="CheckBox" type="CheckBox" parent="HBoxContainer2"]
+layout_mode = 2
+button_pressed = true
+text = "INFO"
+
+[node name="CheckBox2" type="CheckBox" parent="HBoxContainer2"]
+layout_mode = 2
+button_pressed = true
+text = "DEBUG"
+
+[node name="CheckBox3" type="CheckBox" parent="HBoxContainer2"]
+layout_mode = 2
+button_pressed = true
+text = "WARN"
+
+[node name="CheckBox4" type="CheckBox" parent="HBoxContainer2"]
+layout_mode = 2
+button_pressed = true
+text = "ERROR"
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 50.0
+offset_bottom = -55.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LineEdit" type="LineEdit" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -50.0
+grow_horizontal = 2
+grow_vertical = 0
+placeholder_text = "Filter (Regular expressions supported)"

@@ -1,0 +1,112 @@
+[gd_scene load_steps=6 format=3 uid="uid://cq4dmyfc5175f"]
+
+[ext_resource type="Script" path="res://addons/DolphinLog/script/LogNode.cs" id="1_hsgd8"]
+[ext_resource type="Texture2D" uid="uid://cvaj4ak3wd4c2" path="res://addons/DolphinLog/res/32.png" id="2_d2y5c"]
+[ext_resource type="Texture2D" uid="uid://dou0frdwxrxnn" path="res://addons/DolphinLog/res/down.png" id="3_j2tqu"]
+[ext_resource type="Texture2D" uid="uid://drvwuhpb5brqx" path="res://addons/DolphinLog/res/up.png" id="4_rlqsp"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_335i6"]
+font_color = Color(0.606626, 0.606626, 0.606626, 1)
+outline_size = 1
+outline_color = Color(0.400855, 0.506315, 0.770147, 1)
+shadow_size = 3
+shadow_color = Color(0, 0, 0, 0.607843)
+shadow_offset = Vector2(1.5, 1.5)
+
+[node name="PanelContainer" type="PanelContainer" node_paths=PackedStringArray("logTextEdit", "collapseButton", "stackTextEdit", "stackContainer", "TimeLabel")]
+offset_right = 768.0
+offset_bottom = 300.0
+script = ExtResource("1_hsgd8")
+logTextEdit = NodePath("VBoxContainer/HBoxContainer/PanelContainer2/RichTextLabel")
+collapseButton = NodePath("VBoxContainer/HBoxContainer/TextureButton")
+stackTextEdit = NodePath("VBoxContainer/PanelContainer/ScrollContainer/RichTextLabel")
+stackContainer = NodePath("VBoxContainer/PanelContainer")
+TimeLabel = NodePath("VBoxContainer/HBoxContainer/TimeLabel")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+modulate = Color(0.211765, 0.239216, 0.290196, 1)
+layout_mode = 2
+texture = ExtResource("2_d2y5c")
+region_rect = Rect2(0, 0, 50, 50)
+patch_margin_left = 21
+patch_margin_top = 24
+patch_margin_right = 30
+patch_margin_bottom = 24
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PanelContainer2" type="PanelContainer" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(600, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/HBoxContainer/PanelContainer2"]
+layout_mode = 2
+focus_mode = 2
+bbcode_enabled = true
+text = "[color=red]test content[/color]
+what
+nsiertrn
+eirnstei"
+fit_content = true
+context_menu_enabled = true
+selection_enabled = true
+
+[node name="TimeLabel" type="Label" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "2024-01-02 
+12:00:00 111"
+label_settings = SubResource("LabelSettings_335i6")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="VBoxContainer/HBoxContainer"]
+modulate = Color(0.650128, 0.650128, 0.650128, 1)
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("3_j2tqu")
+texture_pressed = ExtResource("4_rlqsp")
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/PanelContainer"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/PanelContainer/ScrollContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 2
+bbcode_enabled = true
+text = "- stack eirsntien/eisrntuy.cs
+- stack eirsntien/eisrntuy.cs
+- stack eirsntien/eisrntuy.cs
+- stack eirsntien/eisrntuy.cs
+- stack eirsntien/eisrntuy.cs
+- stack eirsntien/eisrntuy.cs
+- stack eirsntien/eisrntuy.cs
+- stack eirsntien/eisrntuy.cs
+- stack eirsntien/eisrntuy.cs
+- stack eirsntien/eisrntuy.cs
+- stack eirsntien/eisrntuy.cs
+- stack eirsntien/eisrntuy.cs
+- stack eirsntien/eisrntuy.cs
+- stack eirsntien/eisrntuy.cs
+- stack eirsntien/eisrntuy.cs
+- stack eirsntien/eisrntuy.cs
+- stack eirsntien/eisrntuy.cs
+- stack eirsntien/eisrntuy.cs
+- stack eirsntien/eisrntuy.cs
+- stack eirsntien/eisrntuy.cs"
+fit_content = true
+context_menu_enabled = true
+selection_enabled = true

@@ -1,0 +1,27 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="GODolphin"
+config/features=PackedStringArray("4.3", "C#", "Forward Plus")
+config/icon="res://icon.svg"
+
+[autoload]
+
+LogSharedBuffer="*res://addons/DolphinLog/script/LogSharedBuffer.cs"
+
+[dotnet]
+
+project/assembly_name="GODolphin"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/DolphinAOP/plugin.cfg", "res://addons/DolphinAction/plugin.cfg", "res://addons/DolphinBBCode/plugin.cfg", "res://addons/DolphinEvent/plugin.cfg", "res://addons/DolphinGrid/plugin.cfg", "res://addons/DolphinIOC/plugin.cfg", "res://addons/DolphinLog/plugin.cfg", "res://addons/DolphinPool/plugin.cfg", "res://addons/DolphinReactive/plugin.cfg", "res://addons/DolphinRes/plugin.cfg", "res://addons/DolphinSingleton/plugin.cfg", "res://addons/DolphinStateMachine/plugin.cfg")
