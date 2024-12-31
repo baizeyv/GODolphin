@@ -74,7 +74,7 @@ public partial class LogWindow : Control
     {
         if (logJson == null)
             return;
-        PackedScene logNodePrefab = GD.Load("res://addons/AnimaLog/LogNode.tscn") as PackedScene;
+        PackedScene logNodePrefab = GD.Load("res://addons/DolphinLog/prefab/LogNode.tscn") as PackedScene;
         var logNode = logNodePrefab?.Instantiate() as LogNode;
         logNode?.Setup(logJson);
         LogContainer.AddChild(logNode);
