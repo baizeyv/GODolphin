@@ -1,6 +1,7 @@
 using System.Reflection;
 using GODolphin.IOC;
 using GODolphin.Pool;
+using GODolphin.StateMachine;
 using Godot;
 
 namespace GODolphin.Singleton;
@@ -34,6 +35,7 @@ public sealed partial class SingletonManager : Node, ISingleton, IPoolable
         // TODO:
         // Register<XXManager>();
         // ......
+        Register<StateMachineManager>();
     }
 
 

@@ -9,7 +9,7 @@ public partial class DolphinLog : EditorPlugin
 
     public override void _EnterTree()
     {
-        GD.PrintRich("[color=yellow][b]Load Addon -> AnimaLog ![/b][/color]");
+        GD.PrintRich("[color=yellow][b]Load Addon -> DolphinLog ![/b][/color]");
         HookDock();
     }
 
@@ -36,12 +36,12 @@ public partial class DolphinLog : EditorPlugin
 
     public override void _Ready()
     {
-        GD.PrintRich("[color=green][b]AnimaLog Ready[/b][/color]");
+        GD.PrintRich("[color=green][b]Addon Ready -> DolphinLog ![/b][/color]");
     }
 
     public override void _ExitTree()
     {
-        GD.PrintRich("[color=red][b]Unload Addon -> AnimaLog ![/b][/color]");
+        GD.PrintRich("[color=red][b]Unload Addon -> DolphinLog ![/b][/color]");
         UnHookDock();
     }
 }

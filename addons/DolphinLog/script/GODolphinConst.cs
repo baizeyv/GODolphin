@@ -1,4 +1,4 @@
-namespace GODolphin.Log;
+namespace GODolphin;
 
 public partial class GODolphinConst
 {

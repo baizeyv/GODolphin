@@ -1,0 +1,56 @@
+[gd_scene load_steps=7 format=3 uid="uid://c86g3a6xyyr0t"]
+
+[ext_resource type="Script" path="res://addons/DolphinStateMachine/script/StateMachineNode.cs" id="1_ubvnn"]
+[ext_resource type="Texture2D" uid="uid://bx7pbpfowk47c" path="res://addons/DolphinStateMachine/res/Energy.png" id="2_11pqc"]
+[ext_resource type="Texture2D" uid="uid://df0tblurjo15y" path="res://addons/DolphinStateMachine/res/Cur.png" id="2_tcif8"]
+[ext_resource type="Texture2D" uid="uid://cykux6orjw2w0" path="res://addons/DolphinStateMachine/res/Goal.png" id="4_fsng6"]
+[ext_resource type="Texture2D" uid="uid://badbxxbmb22gv" path="res://addons/DolphinStateMachine/res/Trash.png" id="4_k0dhm"]
+[ext_resource type="Texture2D" uid="uid://c04q6to4a1u32" path="res://addons/DolphinStateMachine/res/Down.png" id="6_1igci"]
+
+[node name="StateMachineNode" type="PanelContainer" node_paths=PackedStringArray("StateMachineName", "Tree", "ItemList", "CurrentState")]
+custom_minimum_size = Vector2(800, 250)
+size_flags_horizontal = 3
+script = ExtResource("1_ubvnn")
+StateMachineName = NodePath("HBoxContainer/StateMachineNameLabel")
+Tree = NodePath("HBoxContainer/Tree")
+ItemList = NodePath("HBoxContainer/ItemList")
+CurrentState = NodePath("HBoxContainer/CurrentStateLabel")
+TitleTexture = ExtResource("2_11pqc")
+SelectedTexture = ExtResource("2_tcif8")
+PrevTexture = ExtResource("4_fsng6")
+DisableTexture = ExtResource("4_k0dhm")
+DownTexture = ExtResource("6_1igci")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="StateMachineNameLabel" type="Label" parent="HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "TestLogStateMachine"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Tree" type="Tree" parent="HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+hide_folding = true
+
+[node name="ItemList" type="ItemList" parent="HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+auto_height = true
+same_column_width = true
+fixed_icon_size = Vector2i(20, 20)
+
+[node name="CurrentStateLabel" type="Label" parent="HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "----"
+horizontal_alignment = 1
+vertical_alignment = 1

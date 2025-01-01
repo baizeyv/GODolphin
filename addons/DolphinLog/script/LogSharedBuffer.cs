@@ -36,7 +36,7 @@ public partial class LogSharedBuffer : Node
     {
         _client = new();
         _client.ConnectToHost("127.0.0.1", GODolphinConst.LogPort);
-        GD.PrintRich($"[color=green]Connect To 127.0.0.1:{GODolphinConst.LogPort}[/color]");
+        GD.PrintRich($"[color=green]LogSharedBuffer Connect To 127.0.0.1:{GODolphinConst.LogPort}[/color]");
     }
 
     private void _TCPExitTree()
@@ -48,7 +48,7 @@ public partial class LogSharedBuffer : Node
     private void _TCPSend(string msg)
     {
         _client?.Poll();
-        // GD.Print("CLIENT STATUS A:" + _client.GetStatus());
+        // GD.Print("LOG CLIENT STATUS A:" + _client.GetStatus());
         if (_client?.GetStatus() == StreamPeerTcp.Status.Connected)
         {
             LogStruct logStruct = new() { LogCommand = msg };

@@ -11,12 +11,15 @@ config_version=5
 [application]
 
 config/name="GODolphin"
+run/main_scene="res://scene/UIFirst.tscn"
 config/features=PackedStringArray("4.3", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 LogSharedBuffer="*res://addons/DolphinLog/script/LogSharedBuffer.cs"
+SingletonManager="*res://addons/DolphinSingleton/runtime/SingletonManager.cs"
+StateMachineSharedBuffer="*res://addons/DolphinStateMachine/script/StateMachineSharedBuffer.cs"
 
 [dotnet]
 

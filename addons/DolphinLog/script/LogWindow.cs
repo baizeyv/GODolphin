@@ -43,7 +43,6 @@ public partial class LogWindow : Control
     {
         bool infoFlag = true, debugFlag = true, warnFlag = true, errorFlag = true, lockFlag = true, clearFlag = true;
         var err = _config.Load(GODolphinConst.GODOLPHIN_CONFIG);
-        GD.Print(err);
         if (err == Error.Ok)
         {
             if (_config.HasSection(GODolphinConst.LogSection))

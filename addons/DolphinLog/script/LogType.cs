@@ -1,3 +1,5 @@
+using Godot;
+
 namespace GODolphin.Log;
 
 public enum LogType

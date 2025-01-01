@@ -1,9 +1,10 @@
 using System;
 using System.Collections.Generic;
+using Godot;
 
 namespace GODolphin.StateMachine;
 
-public class StateMachine<T>
+public partial class StateMachine<T> : GodotObject where T : Enum
 {
     private Dictionary<T, IState> _states = new();
 
@@ -22,6 +23,14 @@ public class StateMachine<T>
     public float SecondsOfCurrentState = 0f;
 
     private event Action<T, T> _onStateChanged = (_, __) => { };
+
+    public string MachineName { get; private set; }
+
+    internal StateMachine(string machineName)
+    {
+        MachineName = machineName;
+        StateMachineSharedBuffer.Instance.SendStateMachine(this, true, false);
+    }
 
     /// <summary>
     /// * 方式1
@@ -67,6 +76,7 @@ public class StateMachine<T>
                 FrameCountOfCurrentState = 1;
                 SecondsOfCurrentState = 0f;
                 _currentState.Enter();
+                StateMachineSharedBuffer.Instance.SendStateMachine(this, false, false);
             }
         }
     }
@@ -86,6 +96,7 @@ public class StateMachine<T>
             FrameCountOfCurrentState = 0;
             SecondsOfCurrentState = 0f;
             state.Enter();
+            StateMachineSharedBuffer.Instance.SendStateMachine(this, false, false);
         }
     }
 
@@ -109,7 +120,7 @@ public class StateMachine<T>
     }
 }
 
-public abstract class AbstractState<TStateId, TTarget> : IState
+public abstract class AbstractState<TStateId, TTarget> : IState where TStateId : Enum
 {
     protected StateMachine<TStateId> machine;
 
@@ -148,11 +159,19 @@ public abstract class AbstractState<TStateId, TTarget> : IState
 
     protected virtual bool OnCondition() => true;
 
-    protected virtual void OnEnter() { }
+    protected virtual void OnEnter()
+    {
+    }
 
-    protected virtual void OnProcess() { }
+    protected virtual void OnProcess()
+    {
+    }
 
-    protected virtual void OnPhysicsProcess() { }
+    protected virtual void OnPhysicsProcess()
+    {
+    }
 
-    protected virtual void OnExit() { }
+    protected virtual void OnExit()
+    {
+    }
 }
