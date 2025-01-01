@@ -6,11 +6,16 @@
 
 <h1 align="center">🐬 GODolphin 🐬</h1>
 
+* [Introduce](#introduce)
+* [Log Module](#log-module)
+  * [Log Example](#runtime-example)
+* [How To Install](#how-to-install)
+
 ## Introduce
 
 > GODOT's C# toolkit, including the implementation of reactive properties extracted from the [R3](https://github.com/Cysharp/R3) repository, and the very useful tools extracted from [UNITY QFRAMEWORK](https://github.com/liangxiegame/QFramework), with a few minor modifications, and also includes a modern-looking LOG CONSOLE
 
-## Log module
+## Log Module
 
 ---
 > Source of demand:
