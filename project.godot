@@ -18,8 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 LogSharedBuffer="*res://addons/DolphinLog/script/LogSharedBuffer.cs"
-SingletonManager="*res://addons/DolphinSingleton/runtime/SingletonManager.cs"
 StateMachineSharedBuffer="*res://addons/DolphinStateMachine/script/StateMachineSharedBuffer.cs"
+SingletonManager="*res://addons/DolphinSingleton/runtime/SingletonManager.cs"
 
 [dotnet]
 

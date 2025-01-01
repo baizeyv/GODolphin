@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1gc7vmsqjnj2"]
+
+[ext_resource type="Script" path="res://addons/DolphinSingleton/script/SingletonNode.cs" id="1_ewoll"]
+
+[node name="PanelContainer" type="PanelContainer" node_paths=PackedStringArray("TypeNameLabel", "NodeNameLabel", "NameSpaceLabel")]
+size_flags_horizontal = 3
+script = ExtResource("1_ewoll")
+TypeNameLabel = NodePath("HBoxContainer/Label")
+NodeNameLabel = NodePath("HBoxContainer/Label2")
+NameSpaceLabel = NodePath("HBoxContainer/Label3")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Label2" type="Label" parent="HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Label3" type="Label" parent="HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3

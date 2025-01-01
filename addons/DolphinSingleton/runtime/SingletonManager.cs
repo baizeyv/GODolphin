@@ -1,7 +1,7 @@
+using System;
 using System.Reflection;
 using GODolphin.IOC;
 using GODolphin.Pool;
-using GODolphin.StateMachine;
 using Godot;
 
 namespace GODolphin.Singleton;
@@ -16,8 +16,6 @@ public sealed partial class SingletonManager : Node, ISingleton, IPoolable
 
     private SingletonManager() { }
 
-    public int T = 2;
-
     public void OnSingletonInitialize()
     {
         Global.Initialize(GetTree());
@@ -30,12 +28,16 @@ public sealed partial class SingletonManager : Node, ISingleton, IPoolable
         OnSingletonInitialize();
     }
 
-    public void SubscribeAll()
+    private void SubscribeAll()
     {
-        // TODO:
-        // Register<XXManager>();
-        // ......
-        Register<StateMachineManager>();
+        var resource = GD.Load<SingletonResource>(GODolphinConst.ManagerTypeResource);
+        var methodInfo = typeof(SingletonManager).GetMethod(nameof(Register), BindingFlags.NonPublic | BindingFlags.Instance);
+        foreach (var type in resource.ManagerTypeArray)
+        {
+            var t = Type.GetType(type);
+            var genericMethod = methodInfo.MakeGenericMethod(t);
+            genericMethod.Invoke(this, null);
+        }
     }
 
 
@@ -53,7 +55,14 @@ public sealed partial class SingletonManager : Node, ISingleton, IPoolable
             node.Name = defineAtr.NodeName;
             AddChild(node);
             _ioc.RegisterSpecial<T>(defineAtr);
-            break;
+            return;
+        }
+
+        {
+            var node = SingletonCreator.CreateNonPublicConstructorObject<T>();
+            node.Name = info.Name;
+            AddChild(node);
+            _ioc.RegisterSpecial<T>(new NodePathAttribute(info.Name));
         }
     }
 

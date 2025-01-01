@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using GODolphin.Singleton;
 using Godot;
 
 namespace GODolphin.StateMachine;
