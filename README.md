@@ -168,6 +168,11 @@ State Machine Editor Preview:
 
 Inheritance and chaining can be mixed
 
+Please use this to create new state machine, not `new()`
+```csharp
+var machine = StateMachineManager.Instance.CreateMachine<LogType>("LogTypeMachine");
+```
+
 Chaining  Example A:
 ```csharp
 public partial class StateMachineExample1 : Node
