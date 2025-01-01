@@ -7,6 +7,7 @@
 <h1 align="center">🐬 GODolphin 🐬</h1>
 
 * [Introduce](#introduce)
+* [AOP Module](#aop-module)
 * [Log Module](#log-module)
   * [Log Example](#runtime-example)
 * [How To Install](#how-to-install)
@@ -14,6 +15,59 @@
 ## Introduce
 
 > GODOT's C# toolkit, including the implementation of reactive properties extracted from the [R3](https://github.com/Cysharp/R3) repository, and the very useful tools extracted from [UNITY QFRAMEWORK](https://github.com/liangxiegame/QFramework), with a few minor modifications, and also includes a modern-looking LOG CONSOLE
+
+## AOP Module
+
+---
+> Source of demand:
+> 
+> When I am debugging a program, I often need to insert some code before and after a method when calling it somewhere. So I think of AOP, but this function is a bit redundant. After all, I can manually write the code where I want to insert it.
+
+> Notice: Only allowed during debugging, otherwise it will cause performance problems
+
+### Runtime Example
+
+```csharp
+public override void _Ready()
+{
+    Proxy
+        .Instance.SetTarget(this)
+        .SetMethod("TestFOOBAR")
+        .SetArguments(new object[] { "HELLO" })
+        .SetInvocationHandler(LogInvocationHandler.Instance)
+        .Invoke();
+}
+
+public void TestFOOBAR(string msg) 
+{
+    msg += " --WHAT";
+    Log.Error().Msg(msg).Do();
+}
+```
+
+You Need Create Your Custom `InvocationHandler`, extend from `AbstractInvocationHandler`
+```csharp
+public class LogInvocationHandler : AbstractInvocationHandler
+{
+    public static LogInvocationHandler Instance = new LogInvocationHandler();
+
+    private LogInvocationHandler() { }
+
+    public override void Preprocess()
+    {
+        GD.Print("PRE");
+    }
+
+    public override void PostProcess()
+    {
+        GD.Print("POST");
+    }
+}
+```
+
+> Suggestions: 
+> 
+> It is recommended to encapsulate your own static methods directly for easy calling
 
 ## Log Module
 
