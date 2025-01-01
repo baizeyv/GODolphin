@@ -7,38 +7,27 @@ namespace GODolphin.Log;
 [Tool]
 public partial class LogWindow : Control
 {
-    [Export]
-    public Button ClearButton;
+    [Export] public Button ClearButton;
 
-    [Export]
-    public Button CollapseButton;
+    [Export] public Button CollapseButton;
 
-    [Export]
-    public BoxContainer LogContainer;
+    [Export] public BoxContainer LogContainer;
 
-    [Export]
-    public CheckButton LockScrollCheckButton;
+    [Export] public CheckButton LockScrollCheckButton;
 
-    [Export]
-    public CheckButton ClearOnStartButton;
+    [Export] public CheckButton ClearOnStartButton;
 
-    [Export]
-    public CheckBox InfoCheckBox;
+    [Export] public CheckBox InfoCheckBox;
 
-    [Export]
-    public CheckBox DebugCheckBox;
+    [Export] public CheckBox DebugCheckBox;
 
-    [Export]
-    public CheckBox WarnCheckBox;
+    [Export] public CheckBox WarnCheckBox;
 
-    [Export]
-    public CheckBox ErrorCheckBox;
+    [Export] public CheckBox ErrorCheckBox;
 
-    [Export]
-    public ScrollContainer ScrollContainer;
+    [Export] public ScrollContainer ScrollContainer;
 
-    [Export]
-    public LineEdit SearchText;
+    [Export] public LineEdit SearchText;
 
     private ConfigFile _config = new();
 
@@ -52,12 +41,37 @@ public partial class LogWindow : Control
 
     public override void _EnterTree()
     {
-        InfoCheckBox.ButtonPressed = true;
-        DebugCheckBox.ButtonPressed = true;
-        WarnCheckBox.ButtonPressed = true;
-        ErrorCheckBox.ButtonPressed = true;
-        LockScrollCheckButton.ButtonPressed = true;
-        ClearOnStartButton.ButtonPressed = true;
+        bool infoFlag = true, debugFlag = true, warnFlag = true, errorFlag = true, lockFlag = true, clearFlag = true;
+        var err = _config.Load(GODolphinConst.GODOLPHIN_CONFIG);
+        GD.Print(err);
+        if (err == Error.Ok)
+        {
+            if (_config.HasSection(GODolphinConst.LogSection))
+            {
+                infoFlag = (bool)_config.GetValue(GODolphinConst.LogSection, GODolphinConst.LogInfoKey, true);
+                debugFlag = (bool)_config.GetValue(GODolphinConst.LogSection, GODolphinConst.LogDebugKey, true);
+                warnFlag = (bool)_config.GetValue(GODolphinConst.LogSection, GODolphinConst.LogWarnKey, true);
+                errorFlag = (bool)_config.GetValue(GODolphinConst.LogSection, GODolphinConst.LogErrorKey, true);
+                lockFlag = (bool)_config.GetValue(GODolphinConst.LogSection, GODolphinConst.LogLockKey, true);
+                clearFlag = (bool)_config.GetValue(GODolphinConst.LogSection, GODolphinConst.LogClearKey, true);
+            }
+        } else if (err == Error.FileNotFound)
+        {
+            _config.SetValue(GODolphinConst.LogSection, GODolphinConst.LogInfoKey, true);
+            _config.SetValue(GODolphinConst.LogSection, GODolphinConst.LogDebugKey, true);
+            _config.SetValue(GODolphinConst.LogSection, GODolphinConst.LogWarnKey, true);
+            _config.SetValue(GODolphinConst.LogSection, GODolphinConst.LogErrorKey, true);
+            _config.SetValue(GODolphinConst.LogSection, GODolphinConst.LogLockKey, true);
+            _config.SetValue(GODolphinConst.LogSection, GODolphinConst.LogClearKey, true);
+            _config.Save(GODolphinConst.GODOLPHIN_CONFIG);
+        }
+
+        InfoCheckBox.ButtonPressed = infoFlag;
+        DebugCheckBox.ButtonPressed = debugFlag;
+        WarnCheckBox.ButtonPressed = warnFlag;
+        ErrorCheckBox.ButtonPressed = errorFlag;
+        LockScrollCheckButton.ButtonPressed = lockFlag;
+        ClearOnStartButton.ButtonPressed = clearFlag;
         SearchText.Text = "";
 
         InfoCheckBox.Connect("toggled", new Callable(this, nameof(InfoCheckBoxToggle)));
@@ -66,6 +80,8 @@ public partial class LogWindow : Control
         ErrorCheckBox.Connect("toggled", new Callable(this, nameof(ErrorCheckBoxToggle)));
         ClearButton.Connect("pressed", new Callable(this, nameof(OnClearPressed)));
         CollapseButton.Connect("pressed", new Callable(this, nameof(OnCollapsePressed)));
+        LockScrollCheckButton.Connect("toggled", new Callable(this, nameof(OnLockToggle)));
+        ClearOnStartButton.Connect("toggled", new Callable(this, nameof(OnClearStartToggle)));
         SearchText.Connect("text_changed", new Callable(this, nameof(OnTextChanged)));
         _TCPReady();
     }
@@ -113,6 +129,7 @@ public partial class LogWindow : Control
                 logNode.Visible = ErrorCheckBox.ButtonPressed;
                 break;
         }
+
         logNode?.SetMatch(SearchText.Text);
     }
 
@@ -169,6 +186,18 @@ public partial class LogWindow : Control
     //     }
     // }
 
+    private void OnLockToggle(bool toggleOn)
+    {
+        _config.SetValue(GODolphinConst.LogSection, GODolphinConst.LogLockKey, toggleOn);
+        _config.Save(GODolphinConst.GODOLPHIN_CONFIG);
+    }
+
+    private void OnClearStartToggle(bool toggleOn)
+    {
+        _config.SetValue(GODolphinConst.LogSection, GODolphinConst.LogClearKey, toggleOn);
+        _config.Save(GODolphinConst.GODOLPHIN_CONFIG);
+    }
+
     private void OnClearPressed()
     {
         foreach (var kvp in _logMap)
@@ -199,6 +228,7 @@ public partial class LogWindow : Control
         {
             ((LogNode)node).Visible = toggleOn;
         }
+
         if (toggleOn)
         {
             var arr = _logMap[LogType.Info.GetHashCode()].AsGodotArray();
@@ -207,6 +237,9 @@ public partial class LogWindow : Control
                 ((LogNode)item).SetMatch(SearchText.Text);
             }
         }
+
+        _config.SetValue(GODolphinConst.LogSection, GODolphinConst.LogInfoKey, toggleOn);
+        _config.Save(GODolphinConst.GODOLPHIN_CONFIG);
     }
 
     private void DebugCheckBoxToggle(bool toggleOn)
@@ -215,6 +248,7 @@ public partial class LogWindow : Control
         {
             ((LogNode)node).Visible = toggleOn;
         }
+
         if (toggleOn)
         {
             var arr = _logMap[LogType.Debug.GetHashCode()].AsGodotArray();
@@ -223,6 +257,9 @@ public partial class LogWindow : Control
                 ((LogNode)item).SetMatch(SearchText.Text);
             }
         }
+
+        _config.SetValue(GODolphinConst.LogSection, GODolphinConst.LogDebugKey, toggleOn);
+        _config.Save(GODolphinConst.GODOLPHIN_CONFIG);
     }
 
     private void WarnCheckBoxToggle(bool toggleOn)
@@ -231,6 +268,7 @@ public partial class LogWindow : Control
         {
             ((LogNode)node).Visible = toggleOn;
         }
+
         if (toggleOn)
         {
             var arr = _logMap[LogType.Warning.GetHashCode()].AsGodotArray();
@@ -239,6 +277,8 @@ public partial class LogWindow : Control
                 ((LogNode)item).SetMatch(SearchText.Text);
             }
         }
+        _config.SetValue(GODolphinConst.LogSection, GODolphinConst.LogWarnKey, toggleOn);
+        _config.Save(GODolphinConst.GODOLPHIN_CONFIG);
     }
 
     private void ErrorCheckBoxToggle(bool toggleOn)
@@ -256,6 +296,9 @@ public partial class LogWindow : Control
                 ((LogNode)item).SetMatch(SearchText.Text);
             }
         }
+
+        _config.SetValue(GODolphinConst.LogSection, GODolphinConst.LogErrorKey, toggleOn);
+        _config.Save(GODolphinConst.GODOLPHIN_CONFIG);
     }
 
     private void OnTextChanged(string text)
@@ -268,6 +311,7 @@ public partial class LogWindow : Control
                 ((LogNode)item).SetMatch(text);
             }
         }
+
         if (DebugCheckBox.ButtonPressed)
         {
             var arr = _logMap[LogType.Debug.GetHashCode()].AsGodotArray();
@@ -276,6 +320,7 @@ public partial class LogWindow : Control
                 ((LogNode)item).SetMatch(text);
             }
         }
+
         if (WarnCheckBox.ButtonPressed)
         {
             var arr = _logMap[LogType.Warning.GetHashCode()].AsGodotArray();
@@ -284,6 +329,7 @@ public partial class LogWindow : Control
                 ((LogNode)item).SetMatch(text);
             }
         }
+
         if (ErrorCheckBox.ButtonPressed)
         {
             var arr = _logMap[LogType.Error.GetHashCode()].AsGodotArray();
@@ -338,6 +384,8 @@ public partial class LogWindow : Control
         ClearButton.Disconnect("pressed", new Callable(this, nameof(OnClearPressed)));
         CollapseButton.Disconnect("pressed", new Callable(this, nameof(OnCollapsePressed)));
         SearchText.Disconnect("text_changed", new Callable(this, nameof(OnTextChanged)));
+        LockScrollCheckButton.Disconnect("toggled", new Callable(this, nameof(OnLockToggle)));
+        ClearOnStartButton.Disconnect("toggled", new Callable(this, nameof(OnClearStartToggle)));
         OnClearPressed();
 
         // GodotPipe.Dispose();
@@ -345,6 +393,7 @@ public partial class LogWindow : Control
         _server.Stop();
         _server?.Dispose();
         _list.Clear();
+        _config.Dispose();
     }
 
     #region TCP
@@ -391,5 +440,6 @@ public partial class LogWindow : Control
             }
         }
     }
+
     #endregion
 }
