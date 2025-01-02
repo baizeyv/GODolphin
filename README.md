@@ -10,6 +10,8 @@
 * [AOP Module](#aop-module)
 * [Log Module](#log-module)
   * [Log Example](#runtime-example)
+* [Resource Module](#resource-module)
+* [Singleton Module](#singleton-module)
 * [State Machine Module](#state-machine-module)
 * [How To Install](#how-to-install)
 
@@ -159,6 +161,18 @@ will not be returned to the object pool.
 > the `Tag()` is tag 
 > 
 > (TAG will output at the second, the first is log level, you can call `Tag("")` anywhere, but before `Do()`)
+
+## Resource Module
+
+Resource Editor Preview:
+
+![ResourceEditor.png](preview/ResourceEditor.png)
+
+## Singleton Module
+
+Singleton Editor Preview:
+
+![SingletonEditor.png](preview/SingletonEditor.png)
 
 ## State Machine Module
 
