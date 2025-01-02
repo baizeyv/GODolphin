@@ -20,6 +20,7 @@ public class ResSearchKeys : IPoolable
         var key = SafeObjectPool<ResSearchKeys>.Instance.Obtain();
         key.AssetName = assetName.ToLower();
         key.AssetType = assetType;
+        ResSharedBuffer.Instance.SendSearchKeyCount();
         return key;
     }
 
@@ -39,6 +40,7 @@ public class ResSearchKeys : IPoolable
     public void Free()
     {
         SafeObjectPool<ResSearchKeys>.Instance.Free(this);
+        ResSharedBuffer.Instance.SendSearchKeyCount();
     }
 
     /// <summary>

@@ -24,7 +24,9 @@ public class ResLoader : IPoolable, IResLoader
 
     public static ResLoader Create()
     {
-        return SafeObjectPool<ResLoader>.Instance.Obtain();
+        var loader = SafeObjectPool<ResLoader>.Instance.Obtain();
+        ResSharedBuffer.Instance.SendLoaderCount();
+        return loader;
     }
 
     public void Free()
@@ -45,6 +47,8 @@ public class ResLoader : IPoolable, IResLoader
         }
 
         SafeObjectPool<ResLoader>.Instance.Free(this);
+        ResSharedBuffer.Instance.SendTable(ResourceManager.Instance._resTable);
+        ResSharedBuffer.Instance.SendLoaderCount();
     }
 
     public void Reset()
@@ -91,6 +95,7 @@ public class ResLoader : IPoolable, IResLoader
 
             first.LoadSync();
         }
+        ResSharedBuffer.Instance.SendTable(ResourceManager.Instance._resTable);
     }
 
     public void EnqueueLoad(
@@ -186,6 +191,7 @@ public class ResLoader : IPoolable, IResLoader
         {
             RemoveAllCallback(false);
             _listener?.Invoke();
+            ResSharedBuffer.Instance.SendTable(ResourceManager.Instance._resTable);
         }
     }
 

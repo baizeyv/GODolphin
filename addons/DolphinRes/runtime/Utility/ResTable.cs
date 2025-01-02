@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
+using Godot;
+using Godot.Collections;
 
 namespace GODolphin.Res;
 
@@ -42,4 +44,24 @@ public class ResTable : Table<IRes>
     }
 
     protected override void OnDispose() { }
+
+    public Dictionary Dictionarify()
+    {
+        var list = GetEnumerator();
+        Dictionary dic = new();
+        while (list.MoveNext())
+        {
+            var item = (Res)list.Current;
+            var resStruct = new ResStruct()
+            {
+                AssetName = item.AssetName,
+                ResState = item.State.ToString(),
+                RefCount = item.RefCount
+            };
+            var str = resStruct.Stringify();
+            dic.Add(item.AssetName, str);
+        }
+        list.Dispose();
+        return dic;
+    }
 }

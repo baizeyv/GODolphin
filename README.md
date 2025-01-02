@@ -31,18 +31,18 @@
 ```csharp
 public override void _Ready()
 {
-    Proxy
-        .Instance.SetTarget(this)
-        .SetMethod("TestFOOBAR")
-        .SetArguments(new object[] { "HELLO" })
-        .SetInvocationHandler(LogInvocationHandler.Instance)
-        .Invoke();
+	Proxy
+		.Instance.SetTarget(this)
+		.SetMethod("TestFOOBAR")
+		.SetArguments(new object[] { "HELLO" })
+		.SetInvocationHandler(LogInvocationHandler.Instance)
+		.Invoke();
 }
 
 public void TestFOOBAR(string msg) 
 {
-    msg += " --WHAT";
-    Log.Error().Msg(msg).Do();
+	msg += " --WHAT";
+	Log.Error().Msg(msg).Do();
 }
 ```
 
@@ -50,19 +50,19 @@ You Need Create Your Custom `InvocationHandler`, extend from `AbstractInvocation
 ```csharp
 public class LogInvocationHandler : AbstractInvocationHandler
 {
-    public static LogInvocationHandler Instance = new LogInvocationHandler();
+	public static LogInvocationHandler Instance = new LogInvocationHandler();
 
-    private LogInvocationHandler() { }
+	private LogInvocationHandler() { }
 
-    public override void Preprocess()
-    {
-        GD.Print("PRE");
-    }
+	public override void Preprocess()
+	{
+		GD.Print("PRE");
+	}
 
-    public override void PostProcess()
-    {
-        GD.Print("POST");
-    }
+	public override void PostProcess()
+	{
+		GD.Print("POST");
+	}
 }
 ```
 
@@ -93,7 +93,7 @@ Log.Info().Msg("test content hello world").Cr().Msg("????").Do();
 Log.Debug().Msg("GOGOGO").Do();
 for (var i = 0; i < 10; i++)
 {
-    Log.Error().Var("i value", i).Do();
+	Log.Error().Var("i value", i).Do();
 }
 ```
 
@@ -177,76 +177,76 @@ Chaining  Example A:
 ```csharp
 public partial class StateMachineExample1 : Node
 {
-    public enum States
-    {
-        A,
-        B,
-    }
+	public enum States
+	{
+		A,
+		B,
+	}
 
-    public StateMachine<States> sm = new();
+	public StateMachine<States> sm = new();
 
-    public override void _Ready()
-    {
-        sm.OnStateChanged(
-            (prev, now) =>
-            {
-                GD.Print($"{prev} => {now}");
-            }
-        );
-        sm.State(States.A)
-            .OnCondition(() =>
-            {
-                return sm.CurrentStateId == States.B;
-            })
-            .OnEnter(() =>
-            {
-                GD.Print("ENTER A");
-            })
-            .OnProcess(() =>
-            {
-                GD.Print("PROCESS A");
-            })
-            .OnPhysicsProcess(() =>
-            {
-                GD.Print("PHYSICS PROCESS A");
-            })
-            .OnExit(() =>
-            {
-                GD.Print("EXIT A");
-            });
-        sm.State(States.B)
-            .OnCondition(() =>
-            {
-                return sm.CurrentStateId == States.A;
-            });
+	public override void _Ready()
+	{
+		sm.OnStateChanged(
+			(prev, now) =>
+			{
+				GD.Print($"{prev} => {now}");
+			}
+		);
+		sm.State(States.A)
+			.OnCondition(() =>
+			{
+				return sm.CurrentStateId == States.B;
+			})
+			.OnEnter(() =>
+			{
+				GD.Print("ENTER A");
+			})
+			.OnProcess(() =>
+			{
+				GD.Print("PROCESS A");
+			})
+			.OnPhysicsProcess(() =>
+			{
+				GD.Print("PHYSICS PROCESS A");
+			})
+			.OnExit(() =>
+			{
+				GD.Print("EXIT A");
+			});
+		sm.State(States.B)
+			.OnCondition(() =>
+			{
+				return sm.CurrentStateId == States.A;
+			});
 
-        sm.StartState(States.A);
+		sm.StartState(States.A);
 
-        this.AppendAction(
-            this.Delay(
-                2f,
-                this.Callback(() =>
-                {
-                    sm.SwitchState(States.B);
-                })
-            )
-        );
-    }
+		this.AppendAction(
+			this.Delay(
+				2f,
+				this.Callback(() =>
+				{
+					sm.SwitchState(States.B);
+				})
+			)
+		);
+	}
 
-    public override void _Process(double delta)
-    {
-        sm._Process(delta);
-    }
+	public override void _Process(double delta)
+	{
+		sm._Process(delta);
+	}
 
-    public override void _PhysicsProcess(double delta)
-    {
-        sm._PhysicsProcess(delta);
-    }
+	public override void _PhysicsProcess(double delta)
+	{
+		sm._PhysicsProcess(delta);
+	}
 
-    public override void _ExitTree()
-    {
-        sm.Clear();
-    }
+	public override void _ExitTree()
+	{
+		sm.Clear();
+	}
 }
 ```
 
@@ -254,67 +254,67 @@ Inheritance Example B:
 ```csharp
 public partial class StateMachineExample2 : Node
 {
-    public enum States2
-    {
-        A,
-        B,
-        C,
-    }
+	public enum States2
+	{
+		A,
+		B,
+		C,
+	}
 
-    public StateMachine<States2> machine = new();
+	public StateMachine<States2> machine = new();
 
-    public class StateA : AbstractState<States2, StateMachineExample2>
-    {
-        public StateA(StateMachine<States2> machine, StateMachineExample2 target)
-            : base(machine, target) { }
+	public class StateA : AbstractState<States2, StateMachineExample2>
+	{
+		public StateA(StateMachine<States2> machine, StateMachineExample2 target)
+			: base(machine, target) { }
 
-        protected override bool OnCondition()
-        {
-            return machine.CurrentStateId == States2.B;
-        }
-    }
+		protected override bool OnCondition()
+		{
+			return machine.CurrentStateId == States2.B;
+		}
+	}
 
-    public class StateB : AbstractState<States2, StateMachineExample2>
-    {
-        public StateB(StateMachine<States2> machine, StateMachineExample2 target)
-            : base(machine, target) { }
+	public class StateB : AbstractState<States2, StateMachineExample2>
+	{
+		public StateB(StateMachine<States2> machine, StateMachineExample2 target)
+			: base(machine, target) { }
 
-        protected override bool OnCondition()
-        {
-            return machine.CurrentStateId == States2.A;
-        }
-    }
+		protected override bool OnCondition()
+		{
+			return machine.CurrentStateId == States2.A;
+		}
+	}
 
-    public override void _Process(double delta)
-    {
-        machine._Process(delta);
-    }
+	public override void _Process(double delta)
+	{
+		machine._Process(delta);
+	}
 
-    public override void _PhysicsProcess(double delta)
-    {
-        machine._PhysicsProcess(delta);
-    }
+	public override void _PhysicsProcess(double delta)
+	{
+		machine._PhysicsProcess(delta);
+	}
 
-    public override void _Ready()
-    {
-        machine.AddState(States2.A, new StateA(machine, this));
-        machine.AddState(States2.B, new StateB(machine, this));
+	public override void _Ready()
+	{
+		machine.AddState(States2.A, new StateA(machine, this));
+		machine.AddState(States2.B, new StateB(machine, this));
 
-        // * 支持和链式模式混用
-        machine
-            .State(States2.C)
-            .OnEnter(() =>
-            {
-                GD.Print("C Enter");
-            });
+		// * 支持和链式模式混用
+		machine
+			.State(States2.C)
+			.OnEnter(() =>
+			{
+				GD.Print("C Enter");
+			});
 
-        machine.StartState(States2.A);
-    }
+		machine.StartState(States2.A);
+	}
 
-    public override void _ExitTree()
-    {
-        machine.Clear();
-    }
+	public override void _ExitTree()
+	{
+		machine.Clear();
+	}
 }
 ```
  

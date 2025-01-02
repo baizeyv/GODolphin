@@ -1,5 +1,7 @@
+using GODolphin.Action;
 using Godot;
 using GODolphin.Log;
+using GODolphin.Res;
 using GODolphin.StateMachine;
 
 public partial class Test : Control
@@ -55,5 +57,25 @@ public partial class Test : Control
         });
         machine2.StartState(LogType.Error);
         machine2.SwitchState(LogType.Debug);
+
+
+        _resLoader = ResLoader.Create();
+        _resLoader.EnqueueLoad("res://icon.svg", (succeed, res) =>
+        {
+            if (succeed)
+            {
+                t = res.Asset as Texture2D;
+            }
+        });
+        _resLoader.LoadAsync();
+
+        this.AppendAction(this.Delay(3f, this.Callback(() =>
+        {
+            _resLoader.Free();
+        })));
     }
+
+    private Texture2D t;
+
+    private ResLoader _resLoader;
 }

@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using GODolphin.Pool;
+using Godot.Collections;
+using Array = Godot.Collections.Array;
 
 namespace GODolphin.Res;
 public abstract class Table<T> : IEnumerable<T>, IDisposable
@@ -45,7 +47,7 @@ public abstract class Table<T> : IEnumerable<T>, IDisposable
 
 public class TableIndex<TKey, TValue> : IDisposable
 {
-    private Dictionary<TKey, List<TValue>> _index = DictionaryPool<TKey, List<TValue>>.Obtain();
+    private System.Collections.Generic.Dictionary<TKey, List<TValue>> _index = DictionaryPool<TKey, List<TValue>>.Obtain();
 
     private Func<TValue, TKey> _getKeyByValue = null;
 

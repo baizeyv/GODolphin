@@ -1,0 +1,197 @@
+[gd_scene load_steps=2 format=3 uid="uid://c2e7mnw1mps1s"]
+
+[ext_resource type="Script" path="res://addons/DolphinRes/script/ResWindow.cs" id="1_b8mo2"]
+
+[node name="ResWindow" type="Control" node_paths=PackedStringArray("NodeContainer", "SearchKeyCountLabel", "ResLoaderCountLabel", "SearchKeyFreeCountLabel", "ResLoaderFreeCountLabel")]
+custom_minimum_size = Vector2(900, 300)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_b8mo2")
+NodeContainer = NodePath("Panel/ScrollContainer/VBoxContainer")
+SearchKeyCountLabel = NodePath("Bottom/HBoxContainer3/HBoxContainer/SearchKeyCountLabel")
+ResLoaderCountLabel = NodePath("Bottom/HBoxContainer3/HBoxContainer2/ResLoaderCountLabel")
+SearchKeyFreeCountLabel = NodePath("Bottom2/HBoxContainer3/HBoxContainer/SearchKeyFreeCountLabel")
+ResLoaderFreeCountLabel = NodePath("Bottom2/HBoxContainer3/HBoxContainer2/ResLoaderFreeCountLabel")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -110.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+
+[node name="ResNameLabel" type="Label" parent="Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Resource Name"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ResStateLabel" type="Label" parent="Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Resource State"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RefCountLabel" type="Label" parent="Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Resrouce Reference Count"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 53.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Bottom" type="Panel" parent="."]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Bottom"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Bottom/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="label" type="Label" parent="Bottom/HBoxContainer3/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Search Key Count:"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="SearchKeyCountLabel" type="Label" parent="Bottom/HBoxContainer3/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "0"
+vertical_alignment = 1
+
+[node name="VSeparator" type="VSeparator" parent="Bottom/HBoxContainer3"]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Bottom/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="label" type="Label" parent="Bottom/HBoxContainer3/HBoxContainer2"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Resource Loader Count:"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="ResLoaderCountLabel" type="Label" parent="Bottom/HBoxContainer3/HBoxContainer2"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "0"
+vertical_alignment = 1
+
+[node name="Bottom2" type="Panel" parent="."]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -105.0
+offset_bottom = -55.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="Bottom2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Bottom2/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="label" type="Label" parent="Bottom2/HBoxContainer3/HBoxContainer"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Search Key Free Count:"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="SearchKeyFreeCountLabel" type="Label" parent="Bottom2/HBoxContainer3/HBoxContainer"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "0"
+vertical_alignment = 1
+
+[node name="VSeparator" type="VSeparator" parent="Bottom2/HBoxContainer3"]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Bottom2/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="label" type="Label" parent="Bottom2/HBoxContainer3/HBoxContainer2"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Resource Loader Free Count:"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="ResLoaderFreeCountLabel" type="Label" parent="Bottom2/HBoxContainer3/HBoxContainer2"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "0"
+vertical_alignment = 1

@@ -19,6 +19,14 @@ namespace GODolphin.Pool
 
         protected IObjectFactory<T> _factory;
 
+        public int CurInUseCount
+        {
+            get;
+            private set;
+        }
+
+        public int FreeCount => _freeObjects.Count;
+
         public void SetObjectFactory(IObjectFactory<T> factory)
         {
             _factory = factory;
@@ -43,7 +51,9 @@ namespace GODolphin.Pool
 
         public T Obtain()
         {
-            return _freeObjects.Count == 0 ? _factory.Create() : _freeObjects.Dequeue();
+            var obj = _freeObjects.Count == 0 ? _factory.Create() : _freeObjects.Dequeue();
+            CurInUseCount++;
+            return obj;
         }
 
         public void Free(T obj)
@@ -61,6 +71,7 @@ namespace GODolphin.Pool
                 peak = Math.Max(peak, _freeObjects.Count);
             }
             Reset(obj);
+            CurInUseCount--;
         }
 
         protected abstract void CustomFree(T obj);

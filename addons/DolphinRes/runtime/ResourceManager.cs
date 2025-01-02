@@ -8,7 +8,7 @@ namespace GODolphin.Res;
 [NodePath("[Resource-Manager]")]
 public partial class ResourceManager : NodeSingleton<ResourceManager>
 {
-    private ResTable _resTable = new();
+    internal ResTable _resTable = new();
 
     private bool _isResMapDirty;
 
@@ -43,6 +43,7 @@ public partial class ResourceManager : NodeSingleton<ResourceManager>
             _resTable.Add(res);
         }
 
+        ResSharedBuffer.Instance.SendTable(_resTable);
         return res;
     }
 
@@ -76,6 +77,7 @@ public partial class ResourceManager : NodeSingleton<ResourceManager>
                 }
             }
         }
+        ResSharedBuffer.Instance.SendTable(_resTable);
     }
 
     public void ClearOnUpdate()
