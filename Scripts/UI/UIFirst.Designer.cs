@@ -6,7 +6,7 @@ namespace Dolphin.Game {
 
 		[Export] public Godot.MenuButton MenuButton;
 
-		[Export] public Godot.TextureRect TextureRect;
+		[Export] public Dolphin.Game.TestA TextureButton;
 
 	}
 }

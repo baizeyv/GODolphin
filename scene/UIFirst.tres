@@ -11,11 +11,14 @@ Map = {
 },
 "TextureButton": {
 "TYPE_FULL_NAME": "Dolphin.Game.TestA",
-"TYPE_IS_CUSTOM": "TRUE"
+"TYPE_IS_CUSTOM": "TRUE",
+"TYPE_PARENT_NODE_PATH": ""
 },
 "TextureButton/TextureRect": {
 "TYPE_FULL_NAME": "Dolphin.Game.TestB",
-"TYPE_IS_CUSTOM": "TRUE"
+"TYPE_IS_CUSTOM": "TRUE",
+"TYPE_PARENT": "Dolphin.Game.TestA",
+"TYPE_PARENT_NODE_PATH": "TextureButton"
 }
 }
 CustomTypeMap = {

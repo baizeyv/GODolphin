@@ -20,7 +20,7 @@ public partial class UIBindRes : Resource
 
     /// <summary>
     /// * 由以上两个Map整理后的Map, KEY->type_name, VALUE->[nodeType:...],[nodeName:...]
-    /// * KEY LIST: GODolphinConst.KEY_NODE_NAME, KEY_NODE_TYPE
+    /// * KEY LIST: GODolphinConst.KEY_NODE_NAME, KEY_NODE_TYPE, KEY_PARENT_NODE_PATH,KEY_NODE_PATH
     /// </summary>
     private Dictionary<string, Array<Dictionary>> _arrangeMap;
 
@@ -28,7 +28,6 @@ public partial class UIBindRes : Resource
 
     public void Generate(string scenePath)
     {
-        // TODO:
         RebuildValue();
         var arr = scenePath.Split('/');
         var nameWithSuffix = arr[arr.Length - 1];
@@ -38,8 +37,7 @@ public partial class UIBindRes : Resource
 
         GenerateFiles();
 
-        // TODO:
-        // HandleBind(scriptFile);
+        BindExportProperty();
     }
 
     private void Arrange()
@@ -67,6 +65,7 @@ public partial class UIBindRes : Resource
                     _arrangeMap.Add(type, new());
                 }
             }
+
             if (dic.TryGetValue(GODolphinConst.TYPE_PARENT, out var parentFullType))
             {
                 // * 存在自定义父类型
@@ -81,6 +80,8 @@ public partial class UIBindRes : Resource
                     Dictionary info = new();
                     info.Add(GODolphinConst.KEY_NODE_NAME, nodeName);
                     info.Add(GODolphinConst.KEY_NODE_TYPE, dic[GODolphinConst.TYPE_FULL_NAME]);
+                    info.Add(GODolphinConst.KEY_PARENT_NODE_PATH, dic[GODolphinConst.TYPE_PARENT_NODE_PATH]);
+                    info.Add(GODolphinConst.KEY_NODE_PATH, kvp.Key);
                     if (_arrangeMap.ContainsKey(type))
                     {
                         _arrangeMap[type].Add(info);
@@ -100,6 +101,8 @@ public partial class UIBindRes : Resource
                     Dictionary info = new();
                     info.Add(GODolphinConst.KEY_NODE_NAME, nodeName);
                     info.Add(GODolphinConst.KEY_NODE_TYPE, dic[GODolphinConst.TYPE_FULL_NAME]);
+                    info.Add(GODolphinConst.KEY_PARENT_NODE_PATH, dic[GODolphinConst.TYPE_PARENT_NODE_PATH]);
+                    info.Add(GODolphinConst.KEY_NODE_PATH, kvp.Key);
                     if (_arrangeMap.ContainsKey(parentFullType))
                     {
                         _arrangeMap[parentFullType].Add(info);
@@ -120,6 +123,8 @@ public partial class UIBindRes : Resource
                 Dictionary info = new();
                 info.Add(GODolphinConst.KEY_NODE_NAME, nodeName);
                 info.Add(GODolphinConst.KEY_NODE_TYPE, dic[GODolphinConst.TYPE_FULL_NAME]);
+                info.Add(GODolphinConst.KEY_PARENT_NODE_PATH, dic[GODolphinConst.TYPE_PARENT_NODE_PATH]);
+                info.Add(GODolphinConst.KEY_NODE_PATH, kvp.Key);
                 if (_arrangeMap.ContainsKey(_mainTypeName))
                 {
                     _arrangeMap[_mainTypeName].Add(info);
@@ -151,14 +156,28 @@ public partial class UIBindRes : Resource
                     dic.Add(GODolphinConst.TYPE_FULL_NAME, info[GODolphinConst.TYPE_FULL_NAME]);
                     dic.Add(GODolphinConst.TYPE_PARENT, parentInfo[GODolphinConst.TYPE_FULL_NAME]);
                     dic.Add(GODolphinConst.TYPE_IS_CUSTOM, info[GODolphinConst.TYPE_IS_CUSTOM]);
+                    dic.Add(GODolphinConst.TYPE_PARENT_NODE_PATH, parentNodePath);
                     Map[nodePath] = dic;
                 }
-                //
+                else
+                {
+                    Dictionary<string, string> dic = new();
+                    dic.Add(GODolphinConst.TYPE_FULL_NAME, info[GODolphinConst.TYPE_FULL_NAME]);
+                    dic.Add(GODolphinConst.TYPE_IS_CUSTOM, info[GODolphinConst.TYPE_IS_CUSTOM]);
+                    dic.Add(GODolphinConst.TYPE_PARENT_NODE_PATH, "");
+                    Map[nodePath] = dic;
+                }
             }
         }
 
-        GD.Print("Z");
-        // TODO: 对Map的Value中的值进行重新赋值
+        foreach (var kvp in Map)
+        {
+            var dic = kvp.Value;
+            if (!dic.TryGetValue(GODolphinConst.TYPE_PARENT_NODE_PATH, out var _))
+            {
+                dic.Add(GODolphinConst.TYPE_PARENT_NODE_PATH, "");
+            }
+        }
     }
 
     private Dictionary<string, string> GetParentUITypeInfo(string nodePath, out string parentNodePath)
@@ -251,7 +270,7 @@ public partial class UIBindRes : Resource
         {
             var file = FileAccess.Open(scriptFilePath, FileAccess.ModeFlags.Write);
             file.StoreString(
-                $"using System;\nusing Godot;\n\nnamespace {nameSpace} {{\n\tpublic partial class {type} : Control {{\n\n\t}}\n}}");
+                $"using System;\nusing Godot;\n\nnamespace {nameSpace} {{\n\tpublic partial class {type} {{\n\n\t}}\n}}");
             file.Flush();
             file.Close();
             file.Dispose();
@@ -311,6 +330,56 @@ public partial class UIBindRes : Resource
         }
 
         EditorInterface.Singleton.SaveScene();
+    }
+
+    /// <summary>
+    /// * 绑定Export属性
+    /// </summary>
+    private void BindExportProperty()
+    {
+        var root = EditorInterface.Singleton.GetEditedSceneRoot();
+        if (root == null)
+            return;
+        GenerateScriptPathAndNamespace(out var scriptPath, out var nameSpace);
+        foreach (var kvp in _arrangeMap)
+        {
+            var typeString = kvp.Key;
+            string mainFile = "";
+            if (typeString.Equals(_mainTypeName))
+            {
+                mainFile = "res://" + scriptPath + typeString + ".cs";
+            }
+            else
+            {
+                mainFile = "res://" + scriptPath + _mainTypeName + "/" + typeString + ".cs";
+            }
+
+            var arr = kvp.Value;
+            foreach (var item in arr)
+            {
+                // TODO:
+                var parentNodePath = (string)item[GODolphinConst.KEY_PARENT_NODE_PATH];
+                Node parentNode;
+                if (string.IsNullOrEmpty(parentNodePath))
+                {
+                    parentNode = root;
+                }
+                else
+                {
+                    parentNode = root.GetNodeOrNull(parentNodePath);
+                }
+                var script = GD.Load<Script>(mainFile);
+                if ((Script)parentNode.GetScript() != script)
+                {
+                    parentNode.SetScript(script);
+                }
+
+                var nodeName = (string)item[GODolphinConst.KEY_NODE_NAME];
+                var nodePath = (string)item[GODolphinConst.KEY_NODE_PATH];
+                var curNode = root.GetNodeOrNull(nodePath);
+                parentNode.Set(nodeName, curNode);
+            }
+        }
     }
 
     private string GetPropertyName(string nodePath)
