@@ -11,4 +11,23 @@ public partial class GODolphinConst
     public static readonly string UIDefaultScriptPath = "Scripts/UI/";
 
     public static readonly string UIDefaultNamespace = "Dolphin.Game";
+
+    //////////////////////////////////////////////////
+    public static readonly string TYPE_FULL_NAME = "TYPE_FULL_NAME";
+
+    public static readonly string TYPE_PARENT = "TYPE_PARENT";
+
+    public static readonly string TYPE_IS_CUSTOM = "TYPE_IS_CUSTOM";
+
+    //////////////////////////////////////////////////
+
+    public static readonly string TRUE_STRING = "TRUE";
+
+    public static readonly string FALSE_STRING = "FALSE";
+
+    //////////////////////////////////////////////////
+
+    public static readonly string KEY_NODE_NAME = "KEY_NODE_NAME";
+
+    public static readonly string KEY_NODE_TYPE = "KEY_NODE_TYPE";
 }

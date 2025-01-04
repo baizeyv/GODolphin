@@ -3,6 +3,7 @@ using Godot;
 using System.Collections.Generic;
 using GODolphin;
 
+namespace GODolphin.UI;
 [Tool]
 public partial class DolphinUI : EditorPlugin
 {

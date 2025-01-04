@@ -1,6 +1,8 @@
 using Godot;
 using Godot.Collections;
 
+namespace GODolphin.UI;
+
 [Tool]
 public partial class UIEditorWindow : Control
 {
@@ -33,7 +35,9 @@ public partial class UIEditorWindow : Control
     /// <summary>
     /// * Key: NodePath
     /// </summary>
-    private Dictionary<string, string> _bindMap = new();
+    private Dictionary<string, Dictionary<string, string>> _bindMap = new();
+
+    private Dictionary<string, string> _customTypeMap = new();
 
     private TreeItem _componentBindClickTreeItem;
 
@@ -89,6 +93,7 @@ public partial class UIEditorWindow : Control
             // * 文件存在
             var uiBindRes = GD.Load<UIBindRes>(_uiBindResPath);
             _bindMap = uiBindRes.Map;
+            _customTypeMap = uiBindRes.CustomTypeMap;
         }
 
         var obj = scene.Instantiate();
@@ -114,7 +119,7 @@ public partial class UIEditorWindow : Control
             return;
         var item = _componentBindClickTreeItem;
         var nodePath = GetNodePathByTreeItem(item);
-        if (_bindMap.TryGetValue(nodePath, out var bind) && !string.IsNullOrEmpty(bind))
+        if (_bindMap.TryGetValue(nodePath, out var bind) && !string.IsNullOrEmpty(bind[GODolphinConst.TYPE_FULL_NAME]))
         {
             // * 已有绑定
         }
@@ -123,8 +128,12 @@ public partial class UIEditorWindow : Control
             // * 无绑定
             if (_nodeMap.ContainsKey(nodePath))
             {
-                var typeString = _lineEdit.Text.Trim(); // TODO: 添加namespace
-                _bindMap.Add(nodePath, typeString);
+                var typeString = GetNamespace() + "." + _lineEdit.Text.Trim();
+                Dictionary<string, string> dic = new();
+                dic.Add(GODolphinConst.TYPE_FULL_NAME, typeString);
+                dic.Add(GODolphinConst.TYPE_IS_CUSTOM, GODolphinConst.TRUE_STRING);
+                _bindMap.Add(nodePath, dic);
+                _customTypeMap.Add(typeString, nodePath);
                 item.SetText(2, typeString);
                 item.SetIcon(0, BoundTexture);
                 item.EraseButton(2, 0);
@@ -135,6 +144,18 @@ public partial class UIEditorWindow : Control
         }
 
         _lineEdit.Text = "";
+    }
+
+    private string GetNamespace()
+    {
+        var config = new ConfigFile();
+        var err = config.Load(GODolphinConst.GODOLPHIN_CONFIG);
+        if (err == Error.Ok)
+        {
+            return (string)config.GetValue(GODolphinConst.UISettingSection, GODolphinConst.UINamespaceKey,
+                GODolphinConst.UIDefaultNamespace);
+        }
+        return GODolphinConst.UIDefaultNamespace;
     }
 
     private string GetNodePathByTreeItem(TreeItem item)
@@ -154,6 +175,7 @@ public partial class UIEditorWindow : Control
     {
         var res = new UIBindRes();
         res.Map = _bindMap;
+        res.CustomTypeMap = _customTypeMap;
         ResourceSaver.Save(res, _uiBindResPath);
     }
 
@@ -177,7 +199,7 @@ public partial class UIEditorWindow : Control
                 // * 已存在绑定
                 item.SetText(0, child.Name);
                 item.SetText(1, child.GetType().Name);
-                item.SetText(2, _bindMap[path]);
+                item.SetText(2, _bindMap[path][GODolphinConst.TYPE_FULL_NAME]);
                 item.SetIcon(0, BoundTexture);
                 item.SetIconMaxWidth(0, IconMaxWidth);
                 item.AddButton(2, UnbindButtonTexture, 2);
@@ -208,13 +230,17 @@ public partial class UIEditorWindow : Control
             if (column == 2)
             {
                 var nodePath = GetNodePathByTreeItem(item);
-                if (_bindMap.TryGetValue(nodePath, out var bind) && !string.IsNullOrEmpty(bind))
+                if (_bindMap.TryGetValue(nodePath, out var bind) && !string.IsNullOrEmpty(bind[GODolphinConst.TYPE_FULL_NAME]))
                 {
                     // * 已有绑定, 点击后取消绑定
                     if (id == 2)
                     {
                         item.EraseButton(2, 0);
                         _bindMap.Remove(nodePath);
+                        if (_customTypeMap.ContainsKey(item.GetText(2)))
+                        {
+                            _customTypeMap.Remove(item.GetText(2));
+                        }
                         item.SetIcon(0, NormalTexture);
                         item.SetText(2, "");
                         item.AddButton(2, NormalBindTexture, 0);
@@ -228,10 +254,14 @@ public partial class UIEditorWindow : Control
                     if (id == 0)
                     {
                         // * 无绑定
+                        // * 进行普通绑定
                         if (_nodeMap.ContainsKey(nodePath))
                         {
                             var typeString = _nodeMap[nodePath].GetType().FullName;
-                            _bindMap.Add(nodePath, typeString);
+                            Dictionary<string, string> dic = new();
+                            dic.Add(GODolphinConst.TYPE_FULL_NAME, typeString);
+                            dic.Add(GODolphinConst.TYPE_IS_CUSTOM, GODolphinConst.FALSE_STRING);
+                            _bindMap.Add(nodePath, dic);
                             item.SetText(2, typeString);
                             item.SetIcon(0, BoundTexture);
                             item.EraseButton(2, 0);
@@ -242,6 +272,7 @@ public partial class UIEditorWindow : Control
                     }
                     else if (id == 1)
                     {
+                        // * 进行特殊绑定
                         _componentBindClickTreeItem = item;
                         _dialog.Show();
                     }

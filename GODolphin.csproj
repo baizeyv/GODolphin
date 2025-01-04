@@ -7,5 +7,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="addons\DolphinSingleton\data\" />
+    <Folder Include="Scripts\UI\" />
   </ItemGroup>
 </Project>

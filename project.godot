@@ -17,10 +17,9 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-LogSharedBuffer="*res://addons/DolphinLog/script/LogSharedBuffer.cs"
 SingletonManager="*res://addons/DolphinSingleton/runtime/SingletonManager.cs"
-StateMachineSharedBuffer="*res://addons/DolphinStateMachine/script/StateMachineSharedBuffer.cs"
 ResSharedBuffer="*res://addons/DolphinRes/script/ResSharedBuffer.cs"
+LogSharedBuffer="*res://addons/DolphinLog/script/LogSharedBuffer.cs"
 
 [dotnet]
 
@@ -28,4 +27,4 @@ project/assembly_name="GODolphin"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/DolphinAOP/plugin.cfg", "res://addons/DolphinAction/plugin.cfg", "res://addons/DolphinBBCode/plugin.cfg", "res://addons/DolphinEvent/plugin.cfg", "res://addons/DolphinGrid/plugin.cfg", "res://addons/DolphinIOC/plugin.cfg", "res://addons/DolphinLog/plugin.cfg", "res://addons/DolphinPool/plugin.cfg", "res://addons/DolphinReactive/plugin.cfg", "res://addons/DolphinRes/plugin.cfg", "res://addons/DolphinSingleton/plugin.cfg", "res://addons/DolphinStateMachine/plugin.cfg", "res://addons/DolphinUI/plugin.cfg", "res://addons/TexturePackerImporter/plugin.cfg")
+enabled=PackedStringArray("res://addons/DolphinAOP/plugin.cfg", "res://addons/DolphinAction/plugin.cfg", "res://addons/DolphinBBCode/plugin.cfg", "res://addons/DolphinEvent/plugin.cfg", "res://addons/DolphinGrid/plugin.cfg", "res://addons/DolphinIOC/plugin.cfg", "res://addons/DolphinLog/plugin.cfg", "res://addons/DolphinPool/plugin.cfg", "res://addons/DolphinReactive/plugin.cfg", "res://addons/DolphinRes/plugin.cfg", "res://addons/DolphinSingleton/plugin.cfg", "res://addons/DolphinUI/plugin.cfg", "res://addons/TexturePackerImporter/plugin.cfg")
