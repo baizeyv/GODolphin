@@ -18,6 +18,10 @@ public partial class UIEditorWindow : Control
 
     [Export] public Texture2D ComponentBindTexture;
 
+    [Export] public Button GenerateButton;
+
+    [Export] public Button RefreshButton;
+
     private PopupMenu _unbindPopupMenu;
 
     private const int IconMaxWidth = 20;
@@ -41,6 +45,8 @@ public partial class UIEditorWindow : Control
 
     public Vector2I DialogSize = new(300, 100);
 
+    private PackedScene _scene;
+
     public override void _EnterTree()
     {
         _dialog = new();
@@ -50,7 +56,8 @@ public partial class UIEditorWindow : Control
         _dialog.Unresizable = true;
         var screenPosition = DisplayServer.Singleton.ScreenGetPosition();
         var screenSize = DisplayServer.Singleton.ScreenGetSize();
-        _dialog.Position = new Vector2I(screenPosition.X + screenSize.X / 2 - DialogSize.X / 2, screenPosition.Y + screenSize.Y / 2 - DialogSize.Y / 2);
+        _dialog.Position = new Vector2I(screenPosition.X + screenSize.X / 2 - DialogSize.X / 2,
+            screenPosition.Y + screenSize.Y / 2 - DialogSize.Y / 2);
         AddChild(_dialog);
         _dialog.Hide();
 
@@ -65,10 +72,13 @@ public partial class UIEditorWindow : Control
         _dialog.Connect("confirmed", new Callable(this, nameof(OnDialogConfirmed)));
         HierarchyTree.Connect("button_clicked", new Callable(this, nameof(OnTreeButtonClicked)));
         HierarchyTree.Connect("item_selected", new Callable(this, nameof(OnTreeItemSelected)));
+        RefreshButton.Connect("pressed", new Callable(this, nameof(OnRefreshButtonClicked)));
+        GenerateButton.Connect("pressed", new Callable(this, nameof(OnGenerateButtonClicked)));
     }
 
     public void SetupHierarchy(PackedScene scene)
     {
+        _scene = scene;
         HierarchyTree.Columns = 3;
         HierarchyTree.SelectMode = Tree.SelectModeEnum.Row;
         var path = scene.ResourcePath;
@@ -147,10 +157,11 @@ public partial class UIEditorWindow : Control
         ResourceSaver.Save(res, _uiBindResPath);
     }
 
-    private void HandleRecursive(Node node, TreeItem curRoot, string path = "")
+    private void HandleRecursive(Node node, TreeItem curRoot, string rootPath = "")
     {
         foreach (var child in node.GetChildren())
         {
+            string path = rootPath;
             if (string.IsNullOrEmpty(path))
             {
                 path = child.Name;
@@ -250,10 +261,34 @@ public partial class UIEditorWindow : Control
         selection.AddNode(nd);
     }
 
+    private void OnGenerateButtonClicked()
+    {
+        if (string.IsNullOrEmpty(_uiBindResPath))
+        {
+            return;
+        }
+
+        if (!FileAccess.FileExists(_uiBindResPath))
+        {
+            SaveResource();
+        }
+
+        var uiBindRes = GD.Load<UIBindRes>(_uiBindResPath);
+        uiBindRes.Generate(_scene.ResourcePath);
+    }
+
+    private void OnRefreshButtonClicked()
+    {
+        HierarchyTree.Clear();
+        SetupHierarchy(_scene);
+    }
+
     public override void _ExitTree()
     {
         HierarchyTree?.Disconnect("button_clicked", new Callable(this, nameof(OnTreeButtonClicked)));
         HierarchyTree?.Disconnect("item_selected", new Callable(this, nameof(OnTreeItemSelected)));
+        RefreshButton.Disconnect("pressed", new Callable(this, nameof(OnRefreshButtonClicked)));
+        GenerateButton.Disconnect("pressed", new Callable(this, nameof(OnGenerateButtonClicked)));
         _dialog?.Disconnect("confirmed", new Callable(this, nameof(OnDialogConfirmed)));
     }
 }

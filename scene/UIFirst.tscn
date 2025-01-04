@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dqxnsujart7wc"]
 
-[ext_resource type="Script" path="res://script/Test.cs" id="1_pdvkx"]
+[ext_resource type="Script" path="res://Scripts/UI/UIFirst.cs" id="1_epu83"]
 [ext_resource type="Texture2D" uid="uid://b7q14vbhjdahp" path="res://sprite/icon_white.png" id="2_x8iw6"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6w65g"]
@@ -16,15 +16,16 @@ atlas = ExtResource("2_x8iw6")
 region = Rect2(1020, 804, 37, 113)
 margin = Rect2(38, 0, 76, 0)
 
-[node name="Control" type="Control" node_paths=PackedStringArray("tree")]
+[node name="Control" type="Control" node_paths=PackedStringArray("MenuButton", "TextureRect")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_pdvkx")
-tree = NodePath("Tree")
+script = ExtResource("1_epu83")
+MenuButton = NodePath("MenuButton")
+TextureRect = NodePath("TextureButton/TextureRect")
 
 [node name="TextureButton" type="TextureButton" parent="."]
 layout_mode = 0

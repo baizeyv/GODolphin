@@ -1,6 +1,7 @@
 #if TOOLS
 using Godot;
 using System.Collections.Generic;
+using GODolphin;
 
 [Tool]
 public partial class DolphinUI : EditorPlugin
@@ -11,6 +12,12 @@ public partial class DolphinUI : EditorPlugin
 
     private UIEditorWindow _uiEditor;
 
+    private ConfigFile _config = new();
+
+    private LineEdit _pathEdit;
+
+    private LineEdit _namespaceEdit;
+
     public override void _EnterTree()
     {
         AddToolMenuItem("UIEditorSetting", new Callable(this, nameof(OpenUIEditorSetting)));
@@ -20,6 +27,8 @@ public partial class DolphinUI : EditorPlugin
         _sceneTreeDock = baseControl.FindChild("Scene", true, false);
         var sceneMenu = FindChildrenByType<PopupMenu>(_sceneTreeDock);
         _menu = ((PopupMenu)sceneMenu[0]);
+
+
         _menu.Connect("menu_changed", new Callable(this, nameof(OnMenuChanged)));
         _menu.Connect("id_pressed", new Callable(this, nameof(OnIDPressed)));
     }
@@ -34,11 +43,6 @@ public partial class DolphinUI : EditorPlugin
         {
             _menu.AddItem("UI Editor", 99); // * id 不能超过100
         }
-    }
-
-    private void OnSceneChanged()
-    {
-
     }
 
     private void OnIDPressed(long id)
@@ -78,7 +82,58 @@ public partial class DolphinUI : EditorPlugin
 
     private void OpenUIEditorSetting()
     {
-        // TODO:
+        /////////////////////////////////////////////////
+        var settingDialog = new AcceptDialog();
+        settingDialog.OkButtonText = "Save";
+        settingDialog.Unresizable = true;
+
+        var vbox = new VBoxContainer();
+        settingDialog.AddChild(vbox);
+        Label pathLabel = new();
+        pathLabel.Text = "ScriptPath:";
+        vbox.AddChild(pathLabel);
+        _pathEdit = new();
+        vbox.AddChild(_pathEdit);
+        Label namespaceLabel = new();
+        namespaceLabel.Text = "Namespace:";
+        vbox.AddChild(namespaceLabel);
+        _namespaceEdit = new();
+        vbox.AddChild(_namespaceEdit);
+
+        settingDialog.Connect("confirmed", new Callable(this, nameof(OnDialogConfirmed)));
+        var err = _config.Load(GODolphinConst.GODOLPHIN_CONFIG);
+        string scriptPath = GODolphinConst.UIDefaultScriptPath, namespacestr = GODolphinConst.UIDefaultNamespace;
+        if (err == Error.Ok)
+        {
+            scriptPath = (string)_config.GetValue(GODolphinConst.UISettingSection, GODolphinConst.UIScriptPathKey,
+                GODolphinConst.UIDefaultScriptPath);
+            namespacestr = (string)_config.GetValue(GODolphinConst.UISettingSection, GODolphinConst.UINamespaceKey,
+                GODolphinConst.UIDefaultNamespace);
+        }
+        else if (err == Error.FileNotFound)
+        {
+            _config.SetValue(GODolphinConst.UISettingSection, GODolphinConst.UIScriptPathKey,
+                GODolphinConst.UIDefaultScriptPath);
+            _config.SetValue(GODolphinConst.UISettingSection, GODolphinConst.UINamespaceKey,
+                GODolphinConst.UIDefaultNamespace);
+            _config.Save(GODolphinConst.GODOLPHIN_CONFIG);
+        }
+        _pathEdit.Text = scriptPath;
+        _namespaceEdit.Text = namespacestr;
+
+        /////////////////////////////////////////////////
+        EditorInterface.Singleton.PopupDialogCentered(settingDialog);
+    }
+
+    private void OnDialogConfirmed()
+    {
+        var err = _config.Load(GODolphinConst.GODOLPHIN_CONFIG);
+        var pathStr = _pathEdit.Text[_pathEdit.Text.Length - 1] == '/' ? _pathEdit.Text : _pathEdit.Text + '/';
+        _config.SetValue(GODolphinConst.UISettingSection, GODolphinConst.UIScriptPathKey,
+            pathStr);
+        _config.SetValue(GODolphinConst.UISettingSection, GODolphinConst.UINamespaceKey,
+            _namespaceEdit.Text);
+        _config.Save(GODolphinConst.GODOLPHIN_CONFIG);
     }
 
     private string curSceneFile = "";
@@ -93,6 +148,7 @@ public partial class DolphinUI : EditorPlugin
                 _uiEditor.QueueFree();
                 _uiEditor = null;
             }
+
             curSceneFile = file;
         }
     }

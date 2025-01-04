@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://g15vtsex6aax"]
+[gd_scene load_steps=10 format=3 uid="uid://g15vtsex6aax"]
 
 [ext_resource type="Script" path="res://addons/DolphinUI/script/UIEditorWindow.cs" id="1_80vxe"]
 [ext_resource type="Texture2D" uid="uid://dpl633lgpitrq" path="res://sprite/icon_color.sprites/Film.tres" id="2_e2dkv"]
@@ -7,8 +7,10 @@
 [ext_resource type="Texture2D" uid="uid://cglkgavdc35gq" path="res://addons/DolphinUI/res/Close.png" id="5_gru7h"]
 [ext_resource type="Texture2D" uid="uid://dan8bu88eou7a" path="res://addons/DolphinUI/res/bind1.png" id="6_38rmb"]
 [ext_resource type="Texture2D" uid="uid://dqjhajghgkrdr" path="res://addons/DolphinUI/res/bind2.png" id="7_heew8"]
+[ext_resource type="Texture2D" uid="uid://be1dlfvcmd77i" path="res://sprite/icon_color.sprites/Settings.tres" id="8_hsjaj"]
+[ext_resource type="Texture2D" uid="uid://c6r10v1vwt546" path="res://sprite/icon_color.sprites/Pencil.tres" id="9_s42py"]
 
-[node name="UiEditorWindow" type="Control" node_paths=PackedStringArray("HierarchyTree")]
+[node name="UiEditorWindow" type="Control" node_paths=PackedStringArray("HierarchyTree", "GenerateButton", "RefreshButton")]
 custom_minimum_size = Vector2(500, 500)
 layout_mode = 3
 anchors_preset = 15
@@ -24,6 +26,8 @@ NormalTexture = ExtResource("3_3w2df")
 UnbindButtonTexture = ExtResource("5_gru7h")
 NormalBindTexture = ExtResource("6_38rmb")
 ComponentBindTexture = ExtResource("7_heew8")
+GenerateButton = NodePath("Panel/GenerateButton")
+RefreshButton = NodePath("Panel/RefreshButton")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -38,5 +42,35 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_bottom = -109.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="GenerateButton" type="Button" parent="Panel"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -8.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Generate"
+icon = ExtResource("8_hsjaj")
+expand_icon = true
+
+[node name="RefreshButton" type="Button" parent="Panel"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -104.0
+offset_bottom = -54.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Refresh"
+icon = ExtResource("9_s42py")
+expand_icon = true
