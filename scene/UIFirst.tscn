@@ -1,8 +1,22 @@
-[gd_scene load_steps=2 format=3 uid="uid://dqxnsujart7wc"]
+[gd_scene load_steps=6 format=3 uid="uid://dqxnsujart7wc"]
 
-[ext_resource type="Script" path="res://scene/Test.cs" id="1_pdvkx"]
+[ext_resource type="Script" path="res://script/Test.cs" id="1_pdvkx"]
+[ext_resource type="Texture2D" uid="uid://b7q14vbhjdahp" path="res://sprite/icon_white.png" id="2_x8iw6"]
 
-[node name="Control" type="Control"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6w65g"]
+load_path = "res://.godot/imported/violet_ui.png-25ad6345fb0fa908d9f4dce0f68effb1.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ud75"]
+atlas = SubResource("CompressedTexture2D_6w65g")
+region = Rect2(860, 4, 140, 152)
+margin = Rect2(0, 0, -2, -3)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2yyq0"]
+atlas = ExtResource("2_x8iw6")
+region = Rect2(1020, 804, 37, 113)
+margin = Rect2(38, 0, 76, 0)
+
+[node name="Control" type="Control" node_paths=PackedStringArray("tree")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -10,3 +24,40 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_pdvkx")
+tree = NodePath("Tree")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 507.0
+offset_top = 244.0
+offset_right = 645.0
+offset_bottom = 393.0
+pivot_offset = Vector2(71, 70)
+texture_normal = SubResource("AtlasTexture_0ud75")
+
+[node name="TextureRect" type="TextureRect" parent="TextureButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -56.5
+offset_top = -62.825
+offset_right = 56.5
+offset_bottom = 50.175
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_2yyq0")
+
+[node name="Tree" type="Tree" parent="."]
+layout_mode = 0
+offset_right = 16.0
+offset_bottom = 17.0
+
+[node name="MenuButton" type="MenuButton" parent="."]
+layout_mode = 0
+offset_left = 147.0
+offset_top = 112.0
+offset_right = 387.0
+offset_bottom = 280.0

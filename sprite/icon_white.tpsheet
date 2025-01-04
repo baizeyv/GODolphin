@@ -1,0 +1,5178 @@
+{
+	"textures": [
+		{
+			"image": "icon_white.png",
+			"size": {
+				"w": 2048,
+				"h": 2048
+			},
+			"sprites": [
+				{
+					"filename": "White Add",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Airplane",
+					"region": {
+						"x": 1,
+						"y": 116,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Alarm 2 off",
+					"region": {
+						"x": 116,
+						"y": 1,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Arrow",
+					"region": {
+						"x": 1,
+						"y": 231,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White At",
+					"region": {
+						"x": 116,
+						"y": 116,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Axe 2",
+					"region": {
+						"x": 231,
+						"y": 1,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Axe 3",
+					"region": {
+						"x": 1,
+						"y": 346,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Bitcoin",
+					"region": {
+						"x": 116,
+						"y": 231,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Blade 1",
+					"region": {
+						"x": 231,
+						"y": 116,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Blade 2",
+					"region": {
+						"x": 346,
+						"y": 1,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Blade 3",
+					"region": {
+						"x": 1,
+						"y": 461,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Bomb 2",
+					"region": {
+						"x": 116,
+						"y": 346,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Bomb",
+					"region": {
+						"x": 231,
+						"y": 231,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Bow",
+					"region": {
+						"x": 346,
+						"y": 116,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Bug",
+					"region": {
+						"x": 461,
+						"y": 1,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Building 2",
+					"region": {
+						"x": 1,
+						"y": 576,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Calendar 1",
+					"region": {
+						"x": 116,
+						"y": 461,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Calendar 2",
+					"region": {
+						"x": 231,
+						"y": 346,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Calendar 3",
+					"region": {
+						"x": 346,
+						"y": 231,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Chat 2",
+					"region": {
+						"x": 461,
+						"y": 116,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Chat",
+					"region": {
+						"x": 576,
+						"y": 1,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Check",
+					"region": {
+						"x": 1,
+						"y": 691,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Choices",
+					"region": {
+						"x": 116,
+						"y": 576,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Clip 2",
+					"region": {
+						"x": 231,
+						"y": 461,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Clock",
+					"region": {
+						"x": 346,
+						"y": 346,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Close 2",
+					"region": {
+						"x": 461,
+						"y": 231,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Close",
+					"region": {
+						"x": 576,
+						"y": 116,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Compass",
+					"region": {
+						"x": 691,
+						"y": 1,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Compress",
+					"region": {
+						"x": 1,
+						"y": 806,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Disc",
+					"region": {
+						"x": 116,
+						"y": 691,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Dollar",
+					"region": {
+						"x": 231,
+						"y": 576,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Euro",
+					"region": {
+						"x": 346,
+						"y": 461,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Expand",
+					"region": {
+						"x": 461,
+						"y": 346,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Fan",
+					"region": {
+						"x": 576,
+						"y": 231,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Female",
+					"region": {
+						"x": 691,
+						"y": 116,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Find",
+					"region": {
+						"x": 806,
+						"y": 1,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Flag",
+					"region": {
+						"x": 1,
+						"y": 921,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Gasoline",
+					"region": {
+						"x": 116,
+						"y": 806,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Gear 1",
+					"region": {
+						"x": 231,
+						"y": 691,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Gear 2",
+					"region": {
+						"x": 346,
+						"y": 576,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Gem 1",
+					"region": {
+						"x": 461,
+						"y": 461,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Gift",
+					"region": {
+						"x": 576,
+						"y": 346,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Google",
+					"region": {
+						"x": 691,
+						"y": 231,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Hamer",
+					"region": {
+						"x": 806,
+						"y": 116,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Helmet 2",
+					"region": {
+						"x": 921,
+						"y": 1,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Horse Shoe",
+					"region": {
+						"x": 1,
+						"y": 1036,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Japanese Yen",
+					"region": {
+						"x": 116,
+						"y": 921,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Leaf",
+					"region": {
+						"x": 231,
+						"y": 806,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Link",
+					"region": {
+						"x": 346,
+						"y": 691,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Location 1",
+					"region": {
+						"x": 461,
+						"y": 576,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Mace",
+					"region": {
+						"x": 576,
+						"y": 461,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Menu 3",
+					"region": {
+						"x": 691,
+						"y": 346,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Message",
+					"region": {
+						"x": 806,
+						"y": 231,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Minus",
+					"region": {
+						"x": 921,
+						"y": 116,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Misc 1",
+					"region": {
+						"x": 1036,
+						"y": 1,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Moon",
+					"region": {
+						"x": 1,
+						"y": 1151,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Paint",
+					"region": {
+						"x": 116,
+						"y": 1036,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Paws",
+					"region": {
+						"x": 231,
+						"y": 921,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Pen 2",
+					"region": {
+						"x": 346,
+						"y": 806,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Pen 3",
+					"region": {
+						"x": 461,
+						"y": 691,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Percent",
+					"region": {
+						"x": 576,
+						"y": 576,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Person",
+					"region": {
+						"x": 691,
+						"y": 461,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Pie Chart",
+					"region": {
+						"x": 806,
+						"y": 346,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Pilar",
+					"region": {
+						"x": 921,
+						"y": 231,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Pin",
+					"region": {
+						"x": 1036,
+						"y": 116,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Pinterest",
+					"region": {
+						"x": 1151,
+						"y": 1,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Play",
+					"region": {
+						"x": 1,
+						"y": 1266,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Plug",
+					"region": {
+						"x": 116,
+						"y": 1151,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Plus",
+					"region": {
+						"x": 231,
+						"y": 1036,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Pound",
+					"region": {
+						"x": 346,
+						"y": 921,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Power Button",
+					"region": {
+						"x": 461,
+						"y": 806,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Print",
+					"region": {
+						"x": 576,
+						"y": 691,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Quiver",
+					"region": {
+						"x": 691,
+						"y": 576,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Rank",
+					"region": {
+						"x": 806,
+						"y": 461,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Rocket",
+					"region": {
+						"x": 921,
+						"y": 346,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Rubble",
+					"region": {
+						"x": 1036,
+						"y": 231,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Sad 1",
+					"region": {
+						"x": 1151,
+						"y": 116,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Sad 2",
+					"region": {
+						"x": 1266,
+						"y": 1,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Sad 3",
+					"region": {
+						"x": 1,
+						"y": 1381,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White ScrewDriver",
+					"region": {
+						"x": 116,
+						"y": 1266,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Scroll",
+					"region": {
+						"x": 231,
+						"y": 1151,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Select 2",
+					"region": {
+						"x": 346,
+						"y": 1036,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Select 3",
+					"region": {
+						"x": 461,
+						"y": 921,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Site Off",
+					"region": {
+						"x": 576,
+						"y": 806,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Skype",
+					"region": {
+						"x": 691,
+						"y": 691,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Smiley Happy",
+					"region": {
+						"x": 806,
+						"y": 576,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Smiley",
+					"region": {
+						"x": 921,
+						"y": 461,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Snow",
+					"region": {
+						"x": 1036,
+						"y": 346,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Sound On",
+					"region": {
+						"x": 1151,
+						"y": 231,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Stop",
+					"region": {
+						"x": 1266,
+						"y": 116,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Sun",
+					"region": {
+						"x": 1381,
+						"y": 1,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Swords",
+					"region": {
+						"x": 1,
+						"y": 1496,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Symbol 1",
+					"region": {
+						"x": 116,
+						"y": 1381,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Symbol 15",
+					"region": {
+						"x": 231,
+						"y": 1266,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Symbol 16",
+					"region": {
+						"x": 346,
+						"y": 1151,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Symbol 18",
+					"region": {
+						"x": 461,
+						"y": 1036,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Symbol 21",
+					"region": {
+						"x": 576,
+						"y": 921,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Sysmbol 2",
+					"region": {
+						"x": 691,
+						"y": 806,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Tag",
+					"region": {
+						"x": 806,
+						"y": 691,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Target 1",
+					"region": {
+						"x": 921,
+						"y": 576,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Target 2",
+					"region": {
+						"x": 1036,
+						"y": 461,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Television",
+					"region": {
+						"x": 1151,
+						"y": 346,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Time",
+					"region": {
+						"x": 1266,
+						"y": 231,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Wand 2",
+					"region": {
+						"x": 1381,
+						"y": 116,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Web",
+					"region": {
+						"x": 1496,
+						"y": 1,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Wheel",
+					"region": {
+						"x": 1,
+						"y": 1611,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Wrench",
+					"region": {
+						"x": 116,
+						"y": 1496,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White YingYang",
+					"region": {
+						"x": 231,
+						"y": 1381,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Zoom In",
+					"region": {
+						"x": 346,
+						"y": 1266,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Zoom Out",
+					"region": {
+						"x": 461,
+						"y": 1151,
+						"w": 113,
+						"h": 113
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Sound Off",
+					"region": {
+						"x": 576,
+						"y": 1036,
+						"w": 112,
+						"h": 113
+					},
+					"margin": {
+						"x": 1,
+						"y": 0,
+						"w": 1,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Voice Off",
+					"region": {
+						"x": 691,
+						"y": 921,
+						"w": 112,
+						"h": 113
+					},
+					"margin": {
+						"x": 1,
+						"y": 0,
+						"w": 1,
+						"h": 0
+					}
+				},
+				{
+					"filename": "PowerUp1",
+					"region": {
+						"x": 806,
+						"y": 806,
+						"w": 111,
+						"h": 113
+					},
+					"margin": {
+						"x": 1,
+						"y": 0,
+						"w": 2,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Alarm",
+					"region": {
+						"x": 921,
+						"y": 691,
+						"w": 113,
+						"h": 111
+					},
+					"margin": {
+						"x": 0,
+						"y": 1,
+						"w": 0,
+						"h": 2
+					}
+				},
+				{
+					"filename": "White Bag 2",
+					"region": {
+						"x": 1036,
+						"y": 576,
+						"w": 113,
+						"h": 111
+					},
+					"margin": {
+						"x": 0,
+						"y": 1,
+						"w": 0,
+						"h": 2
+					}
+				},
+				{
+					"filename": "White Cauldron",
+					"region": {
+						"x": 1151,
+						"y": 461,
+						"w": 111,
+						"h": 113
+					},
+					"margin": {
+						"x": 1,
+						"y": 0,
+						"w": 2,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Headphones",
+					"region": {
+						"x": 1266,
+						"y": 346,
+						"w": 111,
+						"h": 113
+					},
+					"margin": {
+						"x": 1,
+						"y": 0,
+						"w": 2,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Map",
+					"region": {
+						"x": 1381,
+						"y": 231,
+						"w": 113,
+						"h": 111
+					},
+					"margin": {
+						"x": 0,
+						"y": 1,
+						"w": 0,
+						"h": 2
+					}
+				},
+				{
+					"filename": "White Menu 1",
+					"region": {
+						"x": 1496,
+						"y": 116,
+						"w": 111,
+						"h": 113
+					},
+					"margin": {
+						"x": 1,
+						"y": 0,
+						"w": 2,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Star Hollow",
+					"region": {
+						"x": 1611,
+						"y": 1,
+						"w": 113,
+						"h": 111
+					},
+					"margin": {
+						"x": 0,
+						"y": 1,
+						"w": 0,
+						"h": 2
+					}
+				},
+				{
+					"filename": "White Star",
+					"region": {
+						"x": 1,
+						"y": 1726,
+						"w": 113,
+						"h": 111
+					},
+					"margin": {
+						"x": 0,
+						"y": 1,
+						"w": 0,
+						"h": 2
+					}
+				},
+				{
+					"filename": "White Symbol 20",
+					"region": {
+						"x": 116,
+						"y": 1611,
+						"w": 111,
+						"h": 113
+					},
+					"margin": {
+						"x": 1,
+						"y": 0,
+						"w": 2,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Thumb Down",
+					"region": {
+						"x": 231,
+						"y": 1496,
+						"w": 113,
+						"h": 111
+					},
+					"margin": {
+						"x": 0,
+						"y": 1,
+						"w": 0,
+						"h": 2
+					}
+				},
+				{
+					"filename": "White ThumbUp",
+					"region": {
+						"x": 346,
+						"y": 1381,
+						"w": 113,
+						"h": 111
+					},
+					"margin": {
+						"x": 0,
+						"y": 1,
+						"w": 0,
+						"h": 2
+					}
+				},
+				{
+					"filename": "White Plane",
+					"region": {
+						"x": 461,
+						"y": 1266,
+						"w": 113,
+						"h": 110
+					},
+					"margin": {
+						"x": 0,
+						"y": 3,
+						"w": 0,
+						"h": 3
+					}
+				},
+				{
+					"filename": "White Armor",
+					"region": {
+						"x": 576,
+						"y": 1151,
+						"w": 109,
+						"h": 113
+					},
+					"margin": {
+						"x": 2,
+						"y": 0,
+						"w": 4,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Bug 2",
+					"region": {
+						"x": 690,
+						"y": 1036,
+						"w": 113,
+						"h": 109
+					},
+					"margin": {
+						"x": 0,
+						"y": 2,
+						"w": 0,
+						"h": 4
+					}
+				},
+				{
+					"filename": "White Building",
+					"region": {
+						"x": 1036,
+						"y": 689,
+						"w": 113,
+						"h": 109
+					},
+					"margin": {
+						"x": 0,
+						"y": 2,
+						"w": 0,
+						"h": 4
+					}
+				},
+				{
+					"filename": "White Camera 2",
+					"region": {
+						"x": 1264,
+						"y": 461,
+						"w": 113,
+						"h": 109
+					},
+					"margin": {
+						"x": 0,
+						"y": 2,
+						"w": 0,
+						"h": 4
+					}
+				},
+				{
+					"filename": "White Clip",
+					"region": {
+						"x": 1726,
+						"y": 1,
+						"w": 113,
+						"h": 109
+					},
+					"margin": {
+						"x": 0,
+						"y": 2,
+						"w": 0,
+						"h": 4
+					}
+				},
+				{
+					"filename": "White Cross Arows",
+					"region": {
+						"x": 1,
+						"y": 1839,
+						"w": 113,
+						"h": 109
+					},
+					"margin": {
+						"x": 0,
+						"y": 2,
+						"w": 0,
+						"h": 4
+					}
+				},
+				{
+					"filename": "White Books",
+					"region": {
+						"x": 1,
+						"y": 1950,
+						"w": 113,
+						"h": 97
+					},
+					"margin": {
+						"x": 0,
+						"y": 8,
+						"w": 0,
+						"h": 16
+					}
+				},
+				{
+					"filename": "White FB Icon",
+					"region": {
+						"x": 346,
+						"y": 1494,
+						"w": 113,
+						"h": 109
+					},
+					"margin": {
+						"x": 0,
+						"y": 2,
+						"w": 0,
+						"h": 4
+					}
+				},
+				{
+					"filename": "White Feather",
+					"region": {
+						"x": 461,
+						"y": 1378,
+						"w": 113,
+						"h": 109
+					},
+					"margin": {
+						"x": 0,
+						"y": 2,
+						"w": 0,
+						"h": 4
+					}
+				},
+				{
+					"filename": "White Level 2",
+					"region": {
+						"x": 805,
+						"y": 921,
+						"w": 109,
+						"h": 113
+					},
+					"margin": {
+						"x": 2,
+						"y": 0,
+						"w": 4,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Magnet 2",
+					"region": {
+						"x": 1151,
+						"y": 576,
+						"w": 109,
+						"h": 113
+					},
+					"margin": {
+						"x": 2,
+						"y": 0,
+						"w": 4,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Menu 2",
+					"region": {
+						"x": 1841,
+						"y": 1,
+						"w": 113,
+						"h": 109
+					},
+					"margin": {
+						"x": 0,
+						"y": 2,
+						"w": 0,
+						"h": 4
+					}
+				},
+				{
+					"filename": "White Energy 2",
+					"region": {
+						"x": 1956,
+						"y": 1,
+						"w": 91,
+						"h": 113
+					},
+					"margin": {
+						"x": 11,
+						"y": 0,
+						"w": 22,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Monitor",
+					"region": {
+						"x": 461,
+						"y": 1489,
+						"w": 113,
+						"h": 109
+					},
+					"margin": {
+						"x": 0,
+						"y": 2,
+						"w": 0,
+						"h": 4
+					}
+				},
+				{
+					"filename": "White Music Off",
+					"region": {
+						"x": 116,
+						"y": 1726,
+						"w": 109,
+						"h": 113
+					},
+					"margin": {
+						"x": 1,
+						"y": 0,
+						"w": 4,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Slider 2",
+					"region": {
+						"x": 576,
+						"y": 1266,
+						"w": 109,
+						"h": 113
+					},
+					"margin": {
+						"x": 2,
+						"y": 0,
+						"w": 4,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Sound Off 2",
+					"region": {
+						"x": 116,
+						"y": 1841,
+						"w": 109,
+						"h": 113
+					},
+					"margin": {
+						"x": 2,
+						"y": 0,
+						"w": 4,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Banner",
+					"region": {
+						"x": 116,
+						"y": 1956,
+						"w": 113,
+						"h": 91
+					},
+					"margin": {
+						"x": 0,
+						"y": 11,
+						"w": 0,
+						"h": 22
+					}
+				},
+				{
+					"filename": "White Symbol 2",
+					"region": {
+						"x": 576,
+						"y": 1381,
+						"w": 109,
+						"h": 113
+					},
+					"margin": {
+						"x": 2,
+						"y": 0,
+						"w": 4,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Slider 1",
+					"region": {
+						"x": 1496,
+						"y": 231,
+						"w": 113,
+						"h": 109
+					},
+					"margin": {
+						"x": 0,
+						"y": 2,
+						"w": 0,
+						"h": 4
+					}
+				},
+				{
+					"filename": "White Wifi Off",
+					"region": {
+						"x": 805,
+						"y": 1036,
+						"w": 113,
+						"h": 109
+					},
+					"margin": {
+						"x": 0,
+						"y": 3,
+						"w": 0,
+						"h": 4
+					}
+				},
+				{
+					"filename": "White A1",
+					"region": {
+						"x": 1151,
+						"y": 691,
+						"w": 113,
+						"h": 107
+					},
+					"margin": {
+						"x": 0,
+						"y": 3,
+						"w": 0,
+						"h": 6
+					}
+				},
+				{
+					"filename": "White Basket",
+					"region": {
+						"x": 576,
+						"y": 1496,
+						"w": 113,
+						"h": 107
+					},
+					"margin": {
+						"x": 0,
+						"y": 3,
+						"w": 0,
+						"h": 6
+					}
+				},
+				{
+					"filename": "White AddFriend",
+					"region": {
+						"x": 461,
+						"y": 1600,
+						"w": 113,
+						"h": 95
+					},
+					"margin": {
+						"x": 0,
+						"y": 9,
+						"w": 0,
+						"h": 18
+					}
+				},
+				{
+					"filename": "White Axe",
+					"region": {
+						"x": 346,
+						"y": 1605,
+						"w": 113,
+						"h": 101
+					},
+					"margin": {
+						"x": 0,
+						"y": 6,
+						"w": 0,
+						"h": 12
+					}
+				},
+				{
+					"filename": "White Bag 1",
+					"region": {
+						"x": 231,
+						"y": 1609,
+						"w": 113,
+						"h": 101
+					},
+					"margin": {
+						"x": 0,
+						"y": 6,
+						"w": 0,
+						"h": 12
+					}
+				},
+				{
+					"filename": "White Cart",
+					"region": {
+						"x": 576,
+						"y": 1605,
+						"w": 113,
+						"h": 103
+					},
+					"margin": {
+						"x": 0,
+						"y": 6,
+						"w": 0,
+						"h": 10
+					}
+				},
+				{
+					"filename": "White Anvil",
+					"region": {
+						"x": 461,
+						"y": 1697,
+						"w": 113,
+						"h": 79
+					},
+					"margin": {
+						"x": 0,
+						"y": 17,
+						"w": 0,
+						"h": 34
+					}
+				},
+				{
+					"filename": "White Backward 2",
+					"region": {
+						"x": 346,
+						"y": 1708,
+						"w": 113,
+						"h": 87
+					},
+					"margin": {
+						"x": 0,
+						"y": 13,
+						"w": 0,
+						"h": 26
+					}
+				},
+				{
+					"filename": "White Chat 4",
+					"region": {
+						"x": 231,
+						"y": 1712,
+						"w": 113,
+						"h": 101
+					},
+					"margin": {
+						"x": 0,
+						"y": 6,
+						"w": 0,
+						"h": 12
+					}
+				},
+				{
+					"filename": "White Backward",
+					"region": {
+						"x": 227,
+						"y": 1815,
+						"w": 107,
+						"h": 113
+					},
+					"margin": {
+						"x": 3,
+						"y": 0,
+						"w": 6,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Bluetooth Off",
+					"region": {
+						"x": 231,
+						"y": 1930,
+						"w": 107,
+						"h": 113
+					},
+					"margin": {
+						"x": 3,
+						"y": 0,
+						"w": 6,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Battery Empty",
+					"region": {
+						"x": 576,
+						"y": 1710,
+						"w": 113,
+						"h": 67
+					},
+					"margin": {
+						"x": 0,
+						"y": 23,
+						"w": 0,
+						"h": 46
+					}
+				},
+				{
+					"filename": "White Battery Full",
+					"region": {
+						"x": 461,
+						"y": 1778,
+						"w": 113,
+						"h": 67
+					},
+					"margin": {
+						"x": 0,
+						"y": 23,
+						"w": 0,
+						"h": 46
+					}
+				},
+				{
+					"filename": "White Battery Half",
+					"region": {
+						"x": 346,
+						"y": 1797,
+						"w": 113,
+						"h": 67
+					},
+					"margin": {
+						"x": 0,
+						"y": 23,
+						"w": 0,
+						"h": 46
+					}
+				},
+				{
+					"filename": "White Battery Storage",
+					"region": {
+						"x": 576,
+						"y": 1779,
+						"w": 113,
+						"h": 81
+					},
+					"margin": {
+						"x": 0,
+						"y": 16,
+						"w": 0,
+						"h": 32
+					}
+				},
+				{
+					"filename": "White Infinite Symbol",
+					"region": {
+						"x": 336,
+						"y": 1866,
+						"w": 113,
+						"h": 55
+					},
+					"margin": {
+						"x": 0,
+						"y": 29,
+						"w": 0,
+						"h": 58
+					}
+				},
+				{
+					"filename": "White Cash Bag",
+					"region": {
+						"x": 340,
+						"y": 1923,
+						"w": 107,
+						"h": 113
+					},
+					"margin": {
+						"x": 3,
+						"y": 0,
+						"w": 6,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Camera",
+					"region": {
+						"x": 461,
+						"y": 1847,
+						"w": 113,
+						"h": 77
+					},
+					"margin": {
+						"x": 0,
+						"y": 18,
+						"w": 0,
+						"h": 36
+					}
+				},
+				{
+					"filename": "White Device Vibration",
+					"region": {
+						"x": 449,
+						"y": 1926,
+						"w": 113,
+						"h": 107
+					},
+					"margin": {
+						"x": 0,
+						"y": 3,
+						"w": 0,
+						"h": 6
+					}
+				},
+				{
+					"filename": "White Chat 3",
+					"region": {
+						"x": 576,
+						"y": 1862,
+						"w": 113,
+						"h": 81
+					},
+					"margin": {
+						"x": 0,
+						"y": 16,
+						"w": 0,
+						"h": 32
+					}
+				},
+				{
+					"filename": "White Chest",
+					"region": {
+						"x": 564,
+						"y": 1945,
+						"w": 113,
+						"h": 97
+					},
+					"margin": {
+						"x": 0,
+						"y": 8,
+						"w": 0,
+						"h": 16
+					}
+				},
+				{
+					"filename": "White Acorn",
+					"region": {
+						"x": 916,
+						"y": 921,
+						"w": 101,
+						"h": 113
+					},
+					"margin": {
+						"x": 6,
+						"y": 0,
+						"w": 12,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Alarm 2",
+					"region": {
+						"x": 919,
+						"y": 806,
+						"w": 99,
+						"h": 113
+					},
+					"margin": {
+						"x": 7,
+						"y": 0,
+						"w": 14,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Anchor",
+					"region": {
+						"x": 920,
+						"y": 1036,
+						"w": 101,
+						"h": 113
+					},
+					"margin": {
+						"x": 6,
+						"y": 0,
+						"w": 12,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Alert",
+					"region": {
+						"x": 1020,
+						"y": 804,
+						"w": 37,
+						"h": 113
+					},
+					"margin": {
+						"x": 38,
+						"y": 0,
+						"w": 76,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Folder",
+					"region": {
+						"x": 1059,
+						"y": 800,
+						"w": 107,
+						"h": 113
+					},
+					"margin": {
+						"x": 3,
+						"y": 0,
+						"w": 6,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Apple",
+					"region": {
+						"x": 1168,
+						"y": 800,
+						"w": 97,
+						"h": 113
+					},
+					"margin": {
+						"x": 8,
+						"y": 0,
+						"w": 16,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Bishop",
+					"region": {
+						"x": 1262,
+						"y": 576,
+						"w": 77,
+						"h": 113
+					},
+					"margin": {
+						"x": 18,
+						"y": 0,
+						"w": 36,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Home 2",
+					"region": {
+						"x": 1266,
+						"y": 691,
+						"w": 113,
+						"h": 107
+					},
+					"margin": {
+						"x": 0,
+						"y": 3,
+						"w": 0,
+						"h": 6
+					}
+				},
+				{
+					"filename": "White Forward",
+					"region": {
+						"x": 1267,
+						"y": 800,
+						"w": 107,
+						"h": 113
+					},
+					"margin": {
+						"x": 3,
+						"y": 0,
+						"w": 6,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Bluetooth",
+					"region": {
+						"x": 1341,
+						"y": 572,
+						"w": 73,
+						"h": 113
+					},
+					"margin": {
+						"x": 20,
+						"y": 0,
+						"w": 40,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Bomb 1",
+					"region": {
+						"x": 1381,
+						"y": 687,
+						"w": 93,
+						"h": 113
+					},
+					"margin": {
+						"x": 10,
+						"y": 0,
+						"w": 20,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Boots 1",
+					"region": {
+						"x": 1376,
+						"y": 802,
+						"w": 105,
+						"h": 113
+					},
+					"margin": {
+						"x": 4,
+						"y": 0,
+						"w": 8,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Book 2",
+					"region": {
+						"x": 1019,
+						"y": 921,
+						"w": 89,
+						"h": 113
+					},
+					"margin": {
+						"x": 12,
+						"y": 0,
+						"w": 24,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Key",
+					"region": {
+						"x": 1110,
+						"y": 915,
+						"w": 107,
+						"h": 113
+					},
+					"margin": {
+						"x": 3,
+						"y": 0,
+						"w": 6,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Move LeftRight",
+					"region": {
+						"x": 1219,
+						"y": 915,
+						"w": 113,
+						"h": 107
+					},
+					"margin": {
+						"x": 0,
+						"y": 3,
+						"w": 0,
+						"h": 6
+					}
+				},
+				{
+					"filename": "White Boxing Glove 1",
+					"region": {
+						"x": 1023,
+						"y": 1036,
+						"w": 99,
+						"h": 113
+					},
+					"margin": {
+						"x": 7,
+						"y": 0,
+						"w": 14,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Calculator",
+					"region": {
+						"x": 1124,
+						"y": 1030,
+						"w": 97,
+						"h": 113
+					},
+					"margin": {
+						"x": 8,
+						"y": 0,
+						"w": 16,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Move UpDown",
+					"region": {
+						"x": 1223,
+						"y": 1024,
+						"w": 107,
+						"h": 113
+					},
+					"margin": {
+						"x": 3,
+						"y": 0,
+						"w": 6,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Cross Swords",
+					"region": {
+						"x": 1334,
+						"y": 917,
+						"w": 113,
+						"h": 105
+					},
+					"margin": {
+						"x": 0,
+						"y": 4,
+						"w": 0,
+						"h": 8
+					}
+				},
+				{
+					"filename": "White Number Sign",
+					"region": {
+						"x": 1332,
+						"y": 1024,
+						"w": 113,
+						"h": 107
+					},
+					"margin": {
+						"x": 0,
+						"y": 3,
+						"w": 0,
+						"h": 6
+					}
+				},
+				{
+					"filename": "White Castle 1",
+					"region": {
+						"x": 1449,
+						"y": 917,
+						"w": 105,
+						"h": 113
+					},
+					"margin": {
+						"x": 4,
+						"y": 0,
+						"w": 8,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Controls",
+					"region": {
+						"x": 1447,
+						"y": 1032,
+						"w": 113,
+						"h": 99
+					},
+					"margin": {
+						"x": 0,
+						"y": 7,
+						"w": 0,
+						"h": 14
+					}
+				},
+				{
+					"filename": "White Cloud 2",
+					"region": {
+						"x": 1332,
+						"y": 1133,
+						"w": 113,
+						"h": 77
+					},
+					"margin": {
+						"x": 0,
+						"y": 18,
+						"w": 0,
+						"h": 36
+					}
+				},
+				{
+					"filename": "White Cloud",
+					"region": {
+						"x": 1447,
+						"y": 1133,
+						"w": 113,
+						"h": 77
+					},
+					"margin": {
+						"x": 0,
+						"y": 18,
+						"w": 0,
+						"h": 36
+					}
+				},
+				{
+					"filename": "White Pouch",
+					"region": {
+						"x": 1223,
+						"y": 1139,
+						"w": 107,
+						"h": 113
+					},
+					"margin": {
+						"x": 3,
+						"y": 0,
+						"w": 6,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Clover",
+					"region": {
+						"x": 1124,
+						"y": 1145,
+						"w": 97,
+						"h": 113
+					},
+					"margin": {
+						"x": 8,
+						"y": 0,
+						"w": 16,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Crown 1",
+					"region": {
+						"x": 1332,
+						"y": 1212,
+						"w": 113,
+						"h": 91
+					},
+					"margin": {
+						"x": 0,
+						"y": 11,
+						"w": 0,
+						"h": 22
+					}
+				},
+				{
+					"filename": "White DropDown",
+					"region": {
+						"x": 1447,
+						"y": 1212,
+						"w": 113,
+						"h": 93
+					},
+					"margin": {
+						"x": 0,
+						"y": 10,
+						"w": 0,
+						"h": 20
+					}
+				},
+				{
+					"filename": "White Snow Globe 1",
+					"region": {
+						"x": 1223,
+						"y": 1254,
+						"w": 107,
+						"h": 113
+					},
+					"margin": {
+						"x": 3,
+						"y": 0,
+						"w": 6,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Crown 2",
+					"region": {
+						"x": 1332,
+						"y": 1305,
+						"w": 113,
+						"h": 85
+					},
+					"margin": {
+						"x": 0,
+						"y": 14,
+						"w": 0,
+						"h": 28
+					}
+				},
+				{
+					"filename": "White Cycle",
+					"region": {
+						"x": 1447,
+						"y": 1307,
+						"w": 113,
+						"h": 85
+					},
+					"margin": {
+						"x": 0,
+						"y": 14,
+						"w": 0,
+						"h": 28
+					}
+				},
+				{
+					"filename": "White Castle 2",
+					"region": {
+						"x": 1609,
+						"y": 116,
+						"w": 73,
+						"h": 113
+					},
+					"margin": {
+						"x": 20,
+						"y": 0,
+						"w": 40,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Click",
+					"region": {
+						"x": 1611,
+						"y": 231,
+						"w": 99,
+						"h": 113
+					},
+					"margin": {
+						"x": 7,
+						"y": 0,
+						"w": 14,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Connected Symbol",
+					"region": {
+						"x": 1684,
+						"y": 114,
+						"w": 105,
+						"h": 113
+					},
+					"margin": {
+						"x": 4,
+						"y": 0,
+						"w": 8,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Pole",
+					"region": {
+						"x": 1791,
+						"y": 112,
+						"w": 113,
+						"h": 107
+					},
+					"margin": {
+						"x": 0,
+						"y": 3,
+						"w": 0,
+						"h": 6
+					}
+				},
+				{
+					"filename": "White Cross",
+					"region": {
+						"x": 1712,
+						"y": 229,
+						"w": 83,
+						"h": 113
+					},
+					"margin": {
+						"x": 15,
+						"y": 0,
+						"w": 30,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Snow Globe 2",
+					"region": {
+						"x": 1797,
+						"y": 221,
+						"w": 107,
+						"h": 113
+					},
+					"margin": {
+						"x": 3,
+						"y": 0,
+						"w": 6,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Shield 1",
+					"region": {
+						"x": 1906,
+						"y": 116,
+						"w": 113,
+						"h": 107
+					},
+					"margin": {
+						"x": 0,
+						"y": 3,
+						"w": 0,
+						"h": 6
+					}
+				},
+				{
+					"filename": "White Shield 2",
+					"region": {
+						"x": 1906,
+						"y": 225,
+						"w": 113,
+						"h": 107
+					},
+					"margin": {
+						"x": 0,
+						"y": 3,
+						"w": 0,
+						"h": 6
+					}
+				},
+				{
+					"filename": "White Down",
+					"region": {
+						"x": 1496,
+						"y": 342,
+						"w": 113,
+						"h": 89
+					},
+					"margin": {
+						"x": 0,
+						"y": 12,
+						"w": 0,
+						"h": 24
+					}
+				},
+				{
+					"filename": "White Explosion 2",
+					"region": {
+						"x": 1381,
+						"y": 344,
+						"w": 113,
+						"h": 93
+					},
+					"margin": {
+						"x": 0,
+						"y": 10,
+						"w": 0,
+						"h": 20
+					}
+				},
+				{
+					"filename": "White Shop 1",
+					"region": {
+						"x": 1379,
+						"y": 439,
+						"w": 113,
+						"h": 107
+					},
+					"margin": {
+						"x": 0,
+						"y": 3,
+						"w": 0,
+						"h": 6
+					}
+				},
+				{
+					"filename": "White Dice",
+					"region": {
+						"x": 1611,
+						"y": 346,
+						"w": 103,
+						"h": 113
+					},
+					"margin": {
+						"x": 5,
+						"y": 0,
+						"w": 10,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Energy",
+					"region": {
+						"x": 1716,
+						"y": 344,
+						"w": 89,
+						"h": 113
+					},
+					"margin": {
+						"x": 12,
+						"y": 0,
+						"w": 24,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Fish 1",
+					"region": {
+						"x": 1807,
+						"y": 336,
+						"w": 103,
+						"h": 113
+					},
+					"margin": {
+						"x": 5,
+						"y": 0,
+						"w": 10,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Strength Up",
+					"region": {
+						"x": 1912,
+						"y": 334,
+						"w": 107,
+						"h": 113
+					},
+					"margin": {
+						"x": 3,
+						"y": 0,
+						"w": 6,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Globe",
+					"region": {
+						"x": 1416,
+						"y": 548,
+						"w": 99,
+						"h": 113
+					},
+					"margin": {
+						"x": 7,
+						"y": 0,
+						"w": 14,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Explosion",
+					"region": {
+						"x": 1496,
+						"y": 433,
+						"w": 113,
+						"h": 85
+					},
+					"margin": {
+						"x": 0,
+						"y": 14,
+						"w": 0,
+						"h": 28
+					}
+				},
+				{
+					"filename": "White Home 3",
+					"region": {
+						"x": 1517,
+						"y": 520,
+						"w": 101,
+						"h": 113
+					},
+					"margin": {
+						"x": 6,
+						"y": 0,
+						"w": 12,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Home",
+					"region": {
+						"x": 1620,
+						"y": 461,
+						"w": 101,
+						"h": 113
+					},
+					"margin": {
+						"x": 6,
+						"y": 0,
+						"w": 12,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Hour Glass",
+					"region": {
+						"x": 1723,
+						"y": 459,
+						"w": 87,
+						"h": 113
+					},
+					"margin": {
+						"x": 13,
+						"y": 0,
+						"w": 26,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Info 1",
+					"region": {
+						"x": 1812,
+						"y": 451,
+						"w": 105,
+						"h": 113
+					},
+					"margin": {
+						"x": 4,
+						"y": 0,
+						"w": 8,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Layers Round",
+					"region": {
+						"x": 1919,
+						"y": 449,
+						"w": 103,
+						"h": 113
+					},
+					"margin": {
+						"x": 5,
+						"y": 0,
+						"w": 10,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Fast Rewind",
+					"region": {
+						"x": 1620,
+						"y": 576,
+						"w": 113,
+						"h": 81
+					},
+					"margin": {
+						"x": 0,
+						"y": 16,
+						"w": 0,
+						"h": 32
+					}
+				},
+				{
+					"filename": "White Files",
+					"region": {
+						"x": 1735,
+						"y": 574,
+						"w": 113,
+						"h": 89
+					},
+					"margin": {
+						"x": 0,
+						"y": 12,
+						"w": 0,
+						"h": 24
+					}
+				},
+				{
+					"filename": "White Dollar Sign",
+					"region": {
+						"x": 1850,
+						"y": 566,
+						"w": 67,
+						"h": 113
+					},
+					"margin": {
+						"x": 23,
+						"y": 0,
+						"w": 46,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Minus 2",
+					"region": {
+						"x": 1919,
+						"y": 564,
+						"w": 105,
+						"h": 113
+					},
+					"margin": {
+						"x": 4,
+						"y": 0,
+						"w": 8,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Level 1",
+					"region": {
+						"x": 1517,
+						"y": 635,
+						"w": 101,
+						"h": 113
+					},
+					"margin": {
+						"x": 6,
+						"y": 0,
+						"w": 12,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Flow Sysmbol",
+					"region": {
+						"x": 1620,
+						"y": 659,
+						"w": 113,
+						"h": 101
+					},
+					"margin": {
+						"x": 0,
+						"y": 6,
+						"w": 0,
+						"h": 12
+					}
+				},
+				{
+					"filename": "White Folder 2",
+					"region": {
+						"x": 1735,
+						"y": 665,
+						"w": 113,
+						"h": 101
+					},
+					"margin": {
+						"x": 0,
+						"y": 6,
+						"w": 0,
+						"h": 12
+					}
+				},
+				{
+					"filename": "White Fire",
+					"region": {
+						"x": 1850,
+						"y": 681,
+						"w": 73,
+						"h": 113
+					},
+					"margin": {
+						"x": 20,
+						"y": 0,
+						"w": 40,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Move Down",
+					"region": {
+						"x": 1925,
+						"y": 679,
+						"w": 103,
+						"h": 113
+					},
+					"margin": {
+						"x": 5,
+						"y": 0,
+						"w": 10,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Symbol 13",
+					"region": {
+						"x": 1483,
+						"y": 750,
+						"w": 107,
+						"h": 113
+					},
+					"margin": {
+						"x": 3,
+						"y": 0,
+						"w": 6,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Heart 1",
+					"region": {
+						"x": 1592,
+						"y": 762,
+						"w": 113,
+						"h": 101
+					},
+					"margin": {
+						"x": 0,
+						"y": 6,
+						"w": 0,
+						"h": 12
+					}
+				},
+				{
+					"filename": "White Gem 2",
+					"region": {
+						"x": 1707,
+						"y": 768,
+						"w": 113,
+						"h": 95
+					},
+					"margin": {
+						"x": 0,
+						"y": 9,
+						"w": 0,
+						"h": 18
+					}
+				},
+				{
+					"filename": "White Trophy",
+					"region": {
+						"x": 1556,
+						"y": 865,
+						"w": 113,
+						"h": 107
+					},
+					"margin": {
+						"x": 0,
+						"y": 3,
+						"w": 0,
+						"h": 6
+					}
+				},
+				{
+					"filename": "White Video",
+					"region": {
+						"x": 1671,
+						"y": 865,
+						"w": 113,
+						"h": 107
+					},
+					"margin": {
+						"x": 0,
+						"y": 3,
+						"w": 0,
+						"h": 6
+					}
+				},
+				{
+					"filename": "White Music",
+					"region": {
+						"x": 1562,
+						"y": 974,
+						"w": 105,
+						"h": 113
+					},
+					"margin": {
+						"x": 4,
+						"y": 0,
+						"w": 8,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Pen",
+					"region": {
+						"x": 1669,
+						"y": 974,
+						"w": 113,
+						"h": 105
+					},
+					"margin": {
+						"x": 0,
+						"y": 4,
+						"w": 0,
+						"h": 8
+					}
+				},
+				{
+					"filename": "White Plus 2",
+					"region": {
+						"x": 1562,
+						"y": 1089,
+						"w": 105,
+						"h": 113
+					},
+					"margin": {
+						"x": 4,
+						"y": 0,
+						"w": 8,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Pop Corn",
+					"region": {
+						"x": 1669,
+						"y": 1081,
+						"w": 105,
+						"h": 113
+					},
+					"margin": {
+						"x": 4,
+						"y": 0,
+						"w": 8,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Questions 1",
+					"region": {
+						"x": 1562,
+						"y": 1204,
+						"w": 105,
+						"h": 113
+					},
+					"margin": {
+						"x": 4,
+						"y": 0,
+						"w": 8,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Symbol 6",
+					"region": {
+						"x": 1669,
+						"y": 1196,
+						"w": 105,
+						"h": 113
+					},
+					"margin": {
+						"x": 4,
+						"y": 0,
+						"w": 8,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White FastFordward",
+					"region": {
+						"x": 1562,
+						"y": 1319,
+						"w": 113,
+						"h": 81
+					},
+					"margin": {
+						"x": 0,
+						"y": 16,
+						"w": 0,
+						"h": 32
+					}
+				},
+				{
+					"filename": "White Graduation Cap",
+					"region": {
+						"x": 1677,
+						"y": 1311,
+						"w": 113,
+						"h": 95
+					},
+					"margin": {
+						"x": 0,
+						"y": 10,
+						"w": 0,
+						"h": 18
+					}
+				},
+				{
+					"filename": "White Grenade",
+					"region": {
+						"x": 1786,
+						"y": 865,
+						"w": 81,
+						"h": 113
+					},
+					"margin": {
+						"x": 16,
+						"y": 0,
+						"w": 32,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Speed",
+					"region": {
+						"x": 1822,
+						"y": 796,
+						"w": 113,
+						"h": 67
+					},
+					"margin": {
+						"x": 0,
+						"y": 23,
+						"w": 0,
+						"h": 46
+					}
+				},
+				{
+					"filename": "White Knight",
+					"region": {
+						"x": 1784,
+						"y": 980,
+						"w": 89,
+						"h": 113
+					},
+					"margin": {
+						"x": 12,
+						"y": 0,
+						"w": 24,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Move Up",
+					"region": {
+						"x": 1776,
+						"y": 1095,
+						"w": 103,
+						"h": 113
+					},
+					"margin": {
+						"x": 5,
+						"y": 0,
+						"w": 10,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Piggy Bank",
+					"region": {
+						"x": 1776,
+						"y": 1210,
+						"w": 113,
+						"h": 99
+					},
+					"margin": {
+						"x": 0,
+						"y": 7,
+						"w": 0,
+						"h": 14
+					}
+				},
+				{
+					"filename": "White Heart 2",
+					"region": {
+						"x": 1792,
+						"y": 1311,
+						"w": 113,
+						"h": 97
+					},
+					"margin": {
+						"x": 0,
+						"y": 8,
+						"w": 0,
+						"h": 16
+					}
+				},
+				{
+					"filename": "White Gun 2",
+					"region": {
+						"x": 1869,
+						"y": 865,
+						"w": 81,
+						"h": 113
+					},
+					"margin": {
+						"x": 16,
+						"y": 0,
+						"w": 32,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Location 2",
+					"region": {
+						"x": 1952,
+						"y": 794,
+						"w": 95,
+						"h": 113
+					},
+					"margin": {
+						"x": 9,
+						"y": 0,
+						"w": 18,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Puzzle Piece",
+					"region": {
+						"x": 1952,
+						"y": 909,
+						"w": 95,
+						"h": 113
+					},
+					"margin": {
+						"x": 9,
+						"y": 0,
+						"w": 18,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Lock",
+					"region": {
+						"x": 1875,
+						"y": 980,
+						"w": 75,
+						"h": 113
+					},
+					"margin": {
+						"x": 19,
+						"y": 0,
+						"w": 38,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Skull",
+					"region": {
+						"x": 1952,
+						"y": 1024,
+						"w": 95,
+						"h": 113
+					},
+					"margin": {
+						"x": 9,
+						"y": 0,
+						"w": 18,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Questions",
+					"region": {
+						"x": 1881,
+						"y": 1095,
+						"w": 69,
+						"h": 113
+					},
+					"margin": {
+						"x": 22,
+						"y": 0,
+						"w": 44,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Water Droplet",
+					"region": {
+						"x": 1952,
+						"y": 1139,
+						"w": 95,
+						"h": 113
+					},
+					"margin": {
+						"x": 9,
+						"y": 0,
+						"w": 18,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Speed Boost 2",
+					"region": {
+						"x": 1907,
+						"y": 1254,
+						"w": 113,
+						"h": 105
+					},
+					"margin": {
+						"x": 0,
+						"y": 4,
+						"w": 0,
+						"h": 8
+					}
+				},
+				{
+					"filename": "White Fish 2",
+					"region": {
+						"x": 1907,
+						"y": 1361,
+						"w": 113,
+						"h": 75
+					},
+					"margin": {
+						"x": 0,
+						"y": 19,
+						"w": 0,
+						"h": 38
+					}
+				},
+				{
+					"filename": "White Forward 2",
+					"region": {
+						"x": 690,
+						"y": 1147,
+						"w": 113,
+						"h": 88
+					},
+					"margin": {
+						"x": 0,
+						"y": 13,
+						"w": 0,
+						"h": 25
+					}
+				},
+				{
+					"filename": "White Symbol 14",
+					"region": {
+						"x": 687,
+						"y": 1237,
+						"w": 113,
+						"h": 105
+					},
+					"margin": {
+						"x": 0,
+						"y": 4,
+						"w": 0,
+						"h": 8
+					}
+				},
+				{
+					"filename": "White Warning 2",
+					"region": {
+						"x": 687,
+						"y": 1344,
+						"w": 105,
+						"h": 113
+					},
+					"margin": {
+						"x": 4,
+						"y": 0,
+						"w": 8,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Heart 3",
+					"region": {
+						"x": 805,
+						"y": 1147,
+						"w": 113,
+						"h": 95
+					},
+					"margin": {
+						"x": 0,
+						"y": 8,
+						"w": 0,
+						"h": 18
+					}
+				},
+				{
+					"filename": "White Move Left",
+					"region": {
+						"x": 802,
+						"y": 1244,
+						"w": 113,
+						"h": 103
+					},
+					"margin": {
+						"x": 0,
+						"y": 5,
+						"w": 0,
+						"h": 10
+					}
+				},
+				{
+					"filename": "White Warning",
+					"region": {
+						"x": 794,
+						"y": 1349,
+						"w": 113,
+						"h": 105
+					},
+					"margin": {
+						"x": 0,
+						"y": 4,
+						"w": 0,
+						"h": 8
+					}
+				},
+				{
+					"filename": "White ID",
+					"region": {
+						"x": 920,
+						"y": 1151,
+						"w": 113,
+						"h": 97
+					},
+					"margin": {
+						"x": 0,
+						"y": 8,
+						"w": 0,
+						"h": 16
+					}
+				},
+				{
+					"filename": "White Media Folder",
+					"region": {
+						"x": 917,
+						"y": 1250,
+						"w": 113,
+						"h": 97
+					},
+					"margin": {
+						"x": 0,
+						"y": 8,
+						"w": 0,
+						"h": 16
+					}
+				},
+				{
+					"filename": "White Witch Hat",
+					"region": {
+						"x": 909,
+						"y": 1349,
+						"w": 113,
+						"h": 105
+					},
+					"margin": {
+						"x": 0,
+						"y": 4,
+						"w": 0,
+						"h": 8
+					}
+				},
+				{
+					"filename": "White Pause",
+					"region": {
+						"x": 1035,
+						"y": 1151,
+						"w": 83,
+						"h": 113
+					},
+					"margin": {
+						"x": 15,
+						"y": 0,
+						"w": 30,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Person 2",
+					"region": {
+						"x": 1120,
+						"y": 1260,
+						"w": 101,
+						"h": 113
+					},
+					"margin": {
+						"x": 6,
+						"y": 0,
+						"w": 12,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Phone",
+					"region": {
+						"x": 691,
+						"y": 1459,
+						"w": 104,
+						"h": 113
+					},
+					"margin": {
+						"x": 5,
+						"y": 0,
+						"w": 9,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Ribbon",
+					"region": {
+						"x": 691,
+						"y": 1574,
+						"w": 101,
+						"h": 113
+					},
+					"margin": {
+						"x": 6,
+						"y": 0,
+						"w": 12,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Symbol 12",
+					"region": {
+						"x": 691,
+						"y": 1689,
+						"w": 101,
+						"h": 113
+					},
+					"margin": {
+						"x": 6,
+						"y": 0,
+						"w": 12,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Tree",
+					"region": {
+						"x": 691,
+						"y": 1804,
+						"w": 101,
+						"h": 113
+					},
+					"margin": {
+						"x": 6,
+						"y": 0,
+						"w": 12,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Move Right",
+					"region": {
+						"x": 797,
+						"y": 1456,
+						"w": 113,
+						"h": 103
+					},
+					"margin": {
+						"x": 0,
+						"y": 5,
+						"w": 0,
+						"h": 10
+					}
+				},
+				{
+					"filename": "White Return",
+					"region": {
+						"x": 912,
+						"y": 1456,
+						"w": 113,
+						"h": 103
+					},
+					"margin": {
+						"x": 0,
+						"y": 5,
+						"w": 0,
+						"h": 10
+					}
+				},
+				{
+					"filename": "White Music Note",
+					"region": {
+						"x": 1032,
+						"y": 1266,
+						"w": 79,
+						"h": 113
+					},
+					"margin": {
+						"x": 17,
+						"y": 0,
+						"w": 34,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Helmet",
+					"region": {
+						"x": 1024,
+						"y": 1381,
+						"w": 113,
+						"h": 73
+					},
+					"margin": {
+						"x": 0,
+						"y": 20,
+						"w": 0,
+						"h": 40
+					}
+				},
+				{
+					"filename": "White Store",
+					"region": {
+						"x": 1027,
+						"y": 1456,
+						"w": 113,
+						"h": 103
+					},
+					"margin": {
+						"x": 0,
+						"y": 5,
+						"w": 0,
+						"h": 10
+					}
+				},
+				{
+					"filename": "White Friends",
+					"region": {
+						"x": 1139,
+						"y": 1375,
+						"w": 113,
+						"h": 79
+					},
+					"margin": {
+						"x": 0,
+						"y": 17,
+						"w": 0,
+						"h": 34
+					}
+				},
+				{
+					"filename": "White Party Pop",
+					"region": {
+						"x": 1142,
+						"y": 1456,
+						"w": 113,
+						"h": 101
+					},
+					"margin": {
+						"x": 0,
+						"y": 6,
+						"w": 0,
+						"h": 12
+					}
+				},
+				{
+					"filename": "White Gun",
+					"region": {
+						"x": 691,
+						"y": 1919,
+						"w": 113,
+						"h": 75
+					},
+					"margin": {
+						"x": 0,
+						"y": 19,
+						"w": 0,
+						"h": 38
+					}
+				},
+				{
+					"filename": "White Select",
+					"region": {
+						"x": 679,
+						"y": 1996,
+						"w": 113,
+						"h": 33
+					},
+					"margin": {
+						"x": 0,
+						"y": 40,
+						"w": 0,
+						"h": 80
+					}
+				},
+				{
+					"filename": "White Heart Arrow",
+					"region": {
+						"x": 797,
+						"y": 1561,
+						"w": 113,
+						"h": 89
+					},
+					"margin": {
+						"x": 0,
+						"y": 12,
+						"w": 0,
+						"h": 24
+					}
+				},
+				{
+					"filename": "White Symbol 11",
+					"region": {
+						"x": 794,
+						"y": 1652,
+						"w": 113,
+						"h": 101
+					},
+					"margin": {
+						"x": 0,
+						"y": 6,
+						"w": 0,
+						"h": 12
+					}
+				},
+				{
+					"filename": "White Telecom",
+					"region": {
+						"x": 794,
+						"y": 1755,
+						"w": 113,
+						"h": 101
+					},
+					"margin": {
+						"x": 0,
+						"y": 6,
+						"w": 0,
+						"h": 12
+					}
+				},
+				{
+					"filename": "White Magnet",
+					"region": {
+						"x": 912,
+						"y": 1561,
+						"w": 113,
+						"h": 94
+					},
+					"margin": {
+						"x": 0,
+						"y": 10,
+						"w": 0,
+						"h": 19
+					}
+				},
+				{
+					"filename": "White Wand",
+					"region": {
+						"x": 909,
+						"y": 1657,
+						"w": 113,
+						"h": 101
+					},
+					"margin": {
+						"x": 0,
+						"y": 6,
+						"w": 0,
+						"h": 12
+					}
+				},
+				{
+					"filename": "White Message 2",
+					"region": {
+						"x": 909,
+						"y": 1760,
+						"w": 113,
+						"h": 97
+					},
+					"margin": {
+						"x": 0,
+						"y": 8,
+						"w": 0,
+						"h": 16
+					}
+				},
+				{
+					"filename": "White News",
+					"region": {
+						"x": 1027,
+						"y": 1561,
+						"w": 113,
+						"h": 97
+					},
+					"margin": {
+						"x": 0,
+						"y": 8,
+						"w": 0,
+						"h": 16
+					}
+				},
+				{
+					"filename": "White Ribbon 2",
+					"region": {
+						"x": 1142,
+						"y": 1559,
+						"w": 113,
+						"h": 99
+					},
+					"margin": {
+						"x": 0,
+						"y": 7,
+						"w": 0,
+						"h": 14
+					}
+				},
+				{
+					"filename": "White Return 2",
+					"region": {
+						"x": 1024,
+						"y": 1660,
+						"w": 99,
+						"h": 113
+					},
+					"margin": {
+						"x": 7,
+						"y": 0,
+						"w": 14,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Signal",
+					"region": {
+						"x": 1125,
+						"y": 1660,
+						"w": 113,
+						"h": 99
+					},
+					"margin": {
+						"x": 0,
+						"y": 7,
+						"w": 0,
+						"h": 14
+					}
+				},
+				{
+					"filename": "White Mountains",
+					"region": {
+						"x": 1024,
+						"y": 1775,
+						"w": 113,
+						"h": 83
+					},
+					"margin": {
+						"x": 0,
+						"y": 15,
+						"w": 0,
+						"h": 30
+					}
+				},
+				{
+					"filename": "White Picture",
+					"region": {
+						"x": 1139,
+						"y": 1761,
+						"w": 113,
+						"h": 97
+					},
+					"margin": {
+						"x": 0,
+						"y": 8,
+						"w": 0,
+						"h": 16
+					}
+				},
+				{
+					"filename": "White Symbol 8",
+					"region": {
+						"x": 806,
+						"y": 1858,
+						"w": 99,
+						"h": 113
+					},
+					"margin": {
+						"x": 7,
+						"y": 0,
+						"w": 14,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Sound 1",
+					"region": {
+						"x": 907,
+						"y": 1859,
+						"w": 113,
+						"h": 99
+					},
+					"margin": {
+						"x": 0,
+						"y": 7,
+						"w": 0,
+						"h": 14
+					}
+				},
+				{
+					"filename": "White Symbol 17",
+					"region": {
+						"x": 907,
+						"y": 1960,
+						"w": 113,
+						"h": 87
+					},
+					"margin": {
+						"x": 0,
+						"y": 13,
+						"w": 0,
+						"h": 26
+					}
+				},
+				{
+					"filename": "White Symbol 9",
+					"region": {
+						"x": 1022,
+						"y": 1860,
+						"w": 99,
+						"h": 113
+					},
+					"margin": {
+						"x": 7,
+						"y": 0,
+						"w": 14,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Playstore",
+					"region": {
+						"x": 1123,
+						"y": 1860,
+						"w": 97,
+						"h": 113
+					},
+					"margin": {
+						"x": 8,
+						"y": 0,
+						"w": 16,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Planet",
+					"region": {
+						"x": 1022,
+						"y": 1975,
+						"w": 113,
+						"h": 69
+					},
+					"margin": {
+						"x": 0,
+						"y": 22,
+						"w": 0,
+						"h": 44
+					}
+				},
+				{
+					"filename": "White Hammer 2",
+					"region": {
+						"x": 1222,
+						"y": 1860,
+						"w": 73,
+						"h": 113
+					},
+					"margin": {
+						"x": 20,
+						"y": 0,
+						"w": 40,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Subtract",
+					"region": {
+						"x": 1137,
+						"y": 1975,
+						"w": 113,
+						"h": 29
+					},
+					"margin": {
+						"x": 0,
+						"y": 42,
+						"w": 0,
+						"h": 84
+					}
+				},
+				{
+					"filename": "White Queen",
+					"region": {
+						"x": 1257,
+						"y": 1369,
+						"w": 73,
+						"h": 113
+					},
+					"margin": {
+						"x": 20,
+						"y": 0,
+						"w": 40,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Pumpkin",
+					"region": {
+						"x": 1332,
+						"y": 1392,
+						"w": 113,
+						"h": 91
+					},
+					"margin": {
+						"x": 0,
+						"y": 11,
+						"w": 0,
+						"h": 22
+					}
+				},
+				{
+					"filename": "White Ranking",
+					"region": {
+						"x": 1447,
+						"y": 1394,
+						"w": 113,
+						"h": 89
+					},
+					"margin": {
+						"x": 0,
+						"y": 12,
+						"w": 0,
+						"h": 24
+					}
+				},
+				{
+					"filename": "White Mask",
+					"region": {
+						"x": 1562,
+						"y": 1402,
+						"w": 113,
+						"h": 81
+					},
+					"margin": {
+						"x": 0,
+						"y": 16,
+						"w": 0,
+						"h": 32
+					}
+				},
+				{
+					"filename": "White Scissor",
+					"region": {
+						"x": 1677,
+						"y": 1408,
+						"w": 113,
+						"h": 95
+					},
+					"margin": {
+						"x": 0,
+						"y": 9,
+						"w": 0,
+						"h": 18
+					}
+				},
+				{
+					"filename": "White Site On",
+					"region": {
+						"x": 1792,
+						"y": 1410,
+						"w": 113,
+						"h": 93
+					},
+					"margin": {
+						"x": 0,
+						"y": 10,
+						"w": 0,
+						"h": 20
+					}
+				},
+				{
+					"filename": "White Pawn",
+					"region": {
+						"x": 1257,
+						"y": 1484,
+						"w": 71,
+						"h": 113
+					},
+					"margin": {
+						"x": 21,
+						"y": 0,
+						"w": 42,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Speed Boost",
+					"region": {
+						"x": 1330,
+						"y": 1485,
+						"w": 113,
+						"h": 97
+					},
+					"margin": {
+						"x": 0,
+						"y": 8,
+						"w": 0,
+						"h": 16
+					}
+				},
+				{
+					"filename": "White Symbol 5",
+					"region": {
+						"x": 1445,
+						"y": 1485,
+						"w": 113,
+						"h": 97
+					},
+					"margin": {
+						"x": 0,
+						"y": 8,
+						"w": 0,
+						"h": 16
+					}
+				},
+				{
+					"filename": "White Weight",
+					"region": {
+						"x": 1560,
+						"y": 1485,
+						"w": 113,
+						"h": 97
+					},
+					"margin": {
+						"x": 0,
+						"y": 8,
+						"w": 0,
+						"h": 16
+					}
+				},
+				{
+					"filename": "White Symbol 3",
+					"region": {
+						"x": 1675,
+						"y": 1505,
+						"w": 113,
+						"h": 81
+					},
+					"margin": {
+						"x": 0,
+						"y": 16,
+						"w": 0,
+						"h": 32
+					}
+				},
+				{
+					"filename": "White Symbol 4",
+					"region": {
+						"x": 1790,
+						"y": 1505,
+						"w": 113,
+						"h": 95
+					},
+					"margin": {
+						"x": 0,
+						"y": 9,
+						"w": 0,
+						"h": 18
+					}
+				},
+				{
+					"filename": "White Symbol 7",
+					"region": {
+						"x": 1907,
+						"y": 1438,
+						"w": 113,
+						"h": 93
+					},
+					"margin": {
+						"x": 0,
+						"y": 10,
+						"w": 0,
+						"h": 20
+					}
+				},
+				{
+					"filename": "White Symbol 10",
+					"region": {
+						"x": 1905,
+						"y": 1533,
+						"w": 113,
+						"h": 83
+					},
+					"margin": {
+						"x": 0,
+						"y": 15,
+						"w": 0,
+						"h": 30
+					}
+				},
+				{
+					"filename": "White Left",
+					"region": {
+						"x": 1257,
+						"y": 1599,
+						"w": 89,
+						"h": 113
+					},
+					"margin": {
+						"x": 12,
+						"y": 0,
+						"w": 24,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Power Up 2",
+					"region": {
+						"x": 1348,
+						"y": 1584,
+						"w": 97,
+						"h": 113
+					},
+					"margin": {
+						"x": 8,
+						"y": 0,
+						"w": 16,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Ribbon 3",
+					"region": {
+						"x": 1447,
+						"y": 1584,
+						"w": 97,
+						"h": 113
+					},
+					"margin": {
+						"x": 8,
+						"y": 0,
+						"w": 16,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Timer 2",
+					"region": {
+						"x": 1546,
+						"y": 1584,
+						"w": 97,
+						"h": 113
+					},
+					"margin": {
+						"x": 8,
+						"y": 0,
+						"w": 16,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Twitter",
+					"region": {
+						"x": 1645,
+						"y": 1588,
+						"w": 113,
+						"h": 95
+					},
+					"margin": {
+						"x": 0,
+						"y": 9,
+						"w": 0,
+						"h": 18
+					}
+				},
+				{
+					"filename": "White Ticket 1",
+					"region": {
+						"x": 1760,
+						"y": 1602,
+						"w": 113,
+						"h": 91
+					},
+					"margin": {
+						"x": 0,
+						"y": 11,
+						"w": 0,
+						"h": 22
+					}
+				},
+				{
+					"filename": "White Ticket 2",
+					"region": {
+						"x": 1875,
+						"y": 1618,
+						"w": 113,
+						"h": 91
+					},
+					"margin": {
+						"x": 0,
+						"y": 11,
+						"w": 0,
+						"h": 22
+					}
+				},
+				{
+					"filename": "White Potion 2",
+					"region": {
+						"x": 1254,
+						"y": 1714,
+						"w": 93,
+						"h": 113
+					},
+					"margin": {
+						"x": 10,
+						"y": 0,
+						"w": 20,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Timer",
+					"region": {
+						"x": 1349,
+						"y": 1699,
+						"w": 97,
+						"h": 113
+					},
+					"margin": {
+						"x": 8,
+						"y": 0,
+						"w": 16,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Trash Can",
+					"region": {
+						"x": 1448,
+						"y": 1699,
+						"w": 97,
+						"h": 113
+					},
+					"margin": {
+						"x": 8,
+						"y": 0,
+						"w": 16,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Sleep",
+					"region": {
+						"x": 1547,
+						"y": 1699,
+						"w": 93,
+						"h": 113
+					},
+					"margin": {
+						"x": 10,
+						"y": 0,
+						"w": 20,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Up",
+					"region": {
+						"x": 1645,
+						"y": 1685,
+						"w": 113,
+						"h": 89
+					},
+					"margin": {
+						"x": 0,
+						"y": 12,
+						"w": 0,
+						"h": 24
+					}
+				},
+				{
+					"filename": "White Wifi On",
+					"region": {
+						"x": 1760,
+						"y": 1695,
+						"w": 113,
+						"h": 83
+					},
+					"margin": {
+						"x": 0,
+						"y": 15,
+						"w": 0,
+						"h": 30
+					}
+				},
+				{
+					"filename": "White Wind",
+					"region": {
+						"x": 1875,
+						"y": 1711,
+						"w": 113,
+						"h": 75
+					},
+					"margin": {
+						"x": 0,
+						"y": 19,
+						"w": 0,
+						"h": 38
+					}
+				},
+				{
+					"filename": "White Youtube",
+					"region": {
+						"x": 1642,
+						"y": 1776,
+						"w": 113,
+						"h": 91
+					},
+					"margin": {
+						"x": 0,
+						"y": 11,
+						"w": 0,
+						"h": 22
+					}
+				},
+				{
+					"filename": "White Open File",
+					"region": {
+						"x": 1757,
+						"y": 1780,
+						"w": 91,
+						"h": 113
+					},
+					"margin": {
+						"x": 11,
+						"y": 0,
+						"w": 22,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Pound Sign",
+					"region": {
+						"x": 1850,
+						"y": 1788,
+						"w": 91,
+						"h": 113
+					},
+					"margin": {
+						"x": 11,
+						"y": 0,
+						"w": 22,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Light",
+					"region": {
+						"x": 1943,
+						"y": 1788,
+						"w": 89,
+						"h": 113
+					},
+					"margin": {
+						"x": 12,
+						"y": 0,
+						"w": 24,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Information",
+					"region": {
+						"x": 1990,
+						"y": 1618,
+						"w": 41,
+						"h": 113
+					},
+					"margin": {
+						"x": 36,
+						"y": 0,
+						"w": 72,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Male",
+					"region": {
+						"x": 1297,
+						"y": 1829,
+						"w": 75,
+						"h": 113
+					},
+					"margin": {
+						"x": 19,
+						"y": 0,
+						"w": 38,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Ribbon 4",
+					"region": {
+						"x": 1374,
+						"y": 1814,
+						"w": 91,
+						"h": 113
+					},
+					"margin": {
+						"x": 11,
+						"y": 0,
+						"w": 22,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Tornado",
+					"region": {
+						"x": 1467,
+						"y": 1814,
+						"w": 91,
+						"h": 113
+					},
+					"margin": {
+						"x": 11,
+						"y": 0,
+						"w": 22,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Symbol 19",
+					"region": {
+						"x": 1560,
+						"y": 1814,
+						"w": 79,
+						"h": 113
+					},
+					"margin": {
+						"x": 17,
+						"y": 0,
+						"w": 34,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Potion 1",
+					"region": {
+						"x": 1641,
+						"y": 1869,
+						"w": 89,
+						"h": 113
+					},
+					"margin": {
+						"x": 12,
+						"y": 0,
+						"w": 24,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Right",
+					"region": {
+						"x": 1732,
+						"y": 1895,
+						"w": 89,
+						"h": 113
+					},
+					"margin": {
+						"x": 12,
+						"y": 0,
+						"w": 24,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Skull 2",
+					"region": {
+						"x": 1823,
+						"y": 1903,
+						"w": 89,
+						"h": 113
+					},
+					"margin": {
+						"x": 12,
+						"y": 0,
+						"w": 24,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Sound Icom",
+					"region": {
+						"x": 1914,
+						"y": 1903,
+						"w": 77,
+						"h": 113
+					},
+					"margin": {
+						"x": 18,
+						"y": 0,
+						"w": 36,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Unlock",
+					"region": {
+						"x": 1374,
+						"y": 1929,
+						"w": 75,
+						"h": 113
+					},
+					"margin": {
+						"x": 19,
+						"y": 0,
+						"w": 38,
+						"h": 0
+					}
+				},
+				{
+					"filename": "White Voice On",
+					"region": {
+						"x": 1451,
+						"y": 1929,
+						"w": 71,
+						"h": 113
+					},
+					"margin": {
+						"x": 21,
+						"y": 0,
+						"w": 42,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:9d3ae214cec5c1e9f05bbf37cbf46f7b:71f5d930134f2324a23ffd89f8399279:d6fec8c86fbe3c829972eb2a277636ae$"
+	}
+}

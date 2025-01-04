@@ -1,0 +1,42 @@
+[gd_scene load_steps=8 format=3 uid="uid://g15vtsex6aax"]
+
+[ext_resource type="Script" path="res://addons/DolphinUI/script/UIEditorWindow.cs" id="1_80vxe"]
+[ext_resource type="Texture2D" uid="uid://dpl633lgpitrq" path="res://sprite/icon_color.sprites/Film.tres" id="2_e2dkv"]
+[ext_resource type="Texture2D" uid="uid://j8gxss861u2h" path="res://sprite/icon_color.sprites/Gold Key.tres" id="2_nl854"]
+[ext_resource type="Texture2D" uid="uid://c3cuqd4tv0cfj" path="res://sprite/icon_color.sprites/Silver Key.tres" id="3_3w2df"]
+[ext_resource type="Texture2D" uid="uid://cglkgavdc35gq" path="res://addons/DolphinUI/res/Close.png" id="5_gru7h"]
+[ext_resource type="Texture2D" uid="uid://dan8bu88eou7a" path="res://addons/DolphinUI/res/bind1.png" id="6_38rmb"]
+[ext_resource type="Texture2D" uid="uid://dqjhajghgkrdr" path="res://addons/DolphinUI/res/bind2.png" id="7_heew8"]
+
+[node name="UiEditorWindow" type="Control" node_paths=PackedStringArray("HierarchyTree")]
+custom_minimum_size = Vector2(500, 500)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_80vxe")
+HierarchyTree = NodePath("Panel/Tree")
+TitleTexture = ExtResource("2_e2dkv")
+BoundTexture = ExtResource("2_nl854")
+NormalTexture = ExtResource("3_3w2df")
+UnbindButtonTexture = ExtResource("5_gru7h")
+NormalBindTexture = ExtResource("6_38rmb")
+ComponentBindTexture = ExtResource("7_heew8")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Tree" type="Tree" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

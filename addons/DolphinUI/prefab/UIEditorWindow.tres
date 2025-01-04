@@ -1,0 +1,9 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dqimj8ts822si"]
+
+[ext_resource type="Script" path="res://addons/DolphinUI/script/UIBindRes.cs" id="1_yu1bi"]
+
+[resource]
+script = ExtResource("1_yu1bi")
+Map = {
+"Panel": "Godot.Panel"
+}

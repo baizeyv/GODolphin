@@ -1,0 +1,8 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://cf18o8v10ojm"]
+
+[ext_resource type="Texture2D" uid="uid://b7q14vbhjdahp" path="res://sprite/icon_white.png" id="1_qipcb"]
+
+[resource]
+atlas = ExtResource("1_qipcb")
+region = Rect2(336, 1866, 113, 55)
+margin = Rect2(0, 29, 0, 58)

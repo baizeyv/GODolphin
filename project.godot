@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="GODolphin"
-run/main_scene="res://scene/UIFirst.tscn"
+run/main_scene="res://addons/DolphinUI/prefab/UIEditorWindow.tscn"
 config/features=PackedStringArray("4.3", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -28,4 +28,4 @@ project/assembly_name="GODolphin"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/DolphinAOP/plugin.cfg", "res://addons/DolphinAction/plugin.cfg", "res://addons/DolphinBBCode/plugin.cfg", "res://addons/DolphinEvent/plugin.cfg", "res://addons/DolphinGrid/plugin.cfg", "res://addons/DolphinIOC/plugin.cfg", "res://addons/DolphinLog/plugin.cfg", "res://addons/DolphinPool/plugin.cfg", "res://addons/DolphinReactive/plugin.cfg", "res://addons/DolphinRes/plugin.cfg", "res://addons/DolphinSingleton/plugin.cfg", "res://addons/DolphinStateMachine/plugin.cfg")
+enabled=PackedStringArray("res://addons/DolphinAOP/plugin.cfg", "res://addons/DolphinAction/plugin.cfg", "res://addons/DolphinBBCode/plugin.cfg", "res://addons/DolphinEvent/plugin.cfg", "res://addons/DolphinGrid/plugin.cfg", "res://addons/DolphinIOC/plugin.cfg", "res://addons/DolphinLog/plugin.cfg", "res://addons/DolphinPool/plugin.cfg", "res://addons/DolphinReactive/plugin.cfg", "res://addons/DolphinRes/plugin.cfg", "res://addons/DolphinSingleton/plugin.cfg", "res://addons/DolphinStateMachine/plugin.cfg", "res://addons/DolphinUI/plugin.cfg", "res://addons/TexturePackerImporter/plugin.cfg")

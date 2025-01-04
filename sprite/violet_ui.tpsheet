@@ -1,0 +1,903 @@
+{
+	"textures": [
+		{
+			"image": "violet_ui.png",
+			"size": {
+				"w": 1012,
+				"h": 1676
+			},
+			"sprites": [
+				{
+					"filename": "Progress Bar Background",
+					"region": {
+						"x": 4,
+						"y": 4,
+						"w": 524,
+						"h": 76
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -2,
+						"h": -2
+					}
+				},
+				{
+					"filename": "Switch Off Background",
+					"region": {
+						"x": 532,
+						"y": 4,
+						"w": 160,
+						"h": 76
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": -2
+					}
+				},
+				{
+					"filename": "Switch On Blue",
+					"region": {
+						"x": 696,
+						"y": 4,
+						"w": 160,
+						"h": 76
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": -2
+					}
+				},
+				{
+					"filename": "Small Square Button Blue",
+					"region": {
+						"x": 860,
+						"y": 4,
+						"w": 140,
+						"h": 152
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -2,
+						"h": -3
+					}
+				},
+				{
+					"filename": "Progress Bar Blue",
+					"region": {
+						"x": 4,
+						"y": 84,
+						"w": 512,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Switch On Green",
+					"region": {
+						"x": 520,
+						"y": 84,
+						"w": 160,
+						"h": 76
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": -2
+					}
+				},
+				{
+					"filename": "Progress Bar Green",
+					"region": {
+						"x": 4,
+						"y": 152,
+						"w": 512,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Button Blue",
+					"region": {
+						"x": 520,
+						"y": 164,
+						"w": 488,
+						"h": 196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -3,
+						"h": -1
+					}
+				},
+				{
+					"filename": "Switch On Orange",
+					"region": {
+						"x": 684,
+						"y": 84,
+						"w": 160,
+						"h": 76
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": -2
+					}
+				},
+				{
+					"filename": "Progress Bar Orange",
+					"region": {
+						"x": 4,
+						"y": 220,
+						"w": 512,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Progress Bar Pink",
+					"region": {
+						"x": 4,
+						"y": 288,
+						"w": 512,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Progress Bar Purple",
+					"region": {
+						"x": 4,
+						"y": 356,
+						"w": 512,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Button Green",
+					"region": {
+						"x": 520,
+						"y": 364,
+						"w": 488,
+						"h": 196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -3,
+						"h": -1
+					}
+				},
+				{
+					"filename": "Progress Bar Red",
+					"region": {
+						"x": 4,
+						"y": 424,
+						"w": 512,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Progress Bar Violet",
+					"region": {
+						"x": 4,
+						"y": 492,
+						"w": 512,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Progress Bar Yellow",
+					"region": {
+						"x": 4,
+						"y": 560,
+						"w": 512,
+						"h": 64
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Button Orange",
+					"region": {
+						"x": 520,
+						"y": 564,
+						"w": 488,
+						"h": 196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -3,
+						"h": -1
+					}
+				},
+				{
+					"filename": "Slider Background",
+					"region": {
+						"x": 4,
+						"y": 628,
+						"w": 512,
+						"h": 40
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Fill Blue",
+					"region": {
+						"x": 4,
+						"y": 672,
+						"w": 512,
+						"h": 32
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": -2
+					}
+				},
+				{
+					"filename": "Fill Green",
+					"region": {
+						"x": 4,
+						"y": 708,
+						"w": 512,
+						"h": 32
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": -2
+					}
+				},
+				{
+					"filename": "Fill Orange",
+					"region": {
+						"x": 4,
+						"y": 744,
+						"w": 512,
+						"h": 32
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": -2
+					}
+				},
+				{
+					"filename": "Button Pink",
+					"region": {
+						"x": 520,
+						"y": 764,
+						"w": 488,
+						"h": 196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -3,
+						"h": -1
+					}
+				},
+				{
+					"filename": "Fill Pink",
+					"region": {
+						"x": 4,
+						"y": 780,
+						"w": 512,
+						"h": 32
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": -2
+					}
+				},
+				{
+					"filename": "Fill Purple",
+					"region": {
+						"x": 4,
+						"y": 816,
+						"w": 512,
+						"h": 32
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": -2
+					}
+				},
+				{
+					"filename": "Fill Red",
+					"region": {
+						"x": 4,
+						"y": 852,
+						"w": 512,
+						"h": 32
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": -2
+					}
+				},
+				{
+					"filename": "Fill Violet",
+					"region": {
+						"x": 4,
+						"y": 888,
+						"w": 512,
+						"h": 32
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": -2
+					}
+				},
+				{
+					"filename": "Fill Yellow",
+					"region": {
+						"x": 4,
+						"y": 924,
+						"w": 512,
+						"h": 32
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": -2
+					}
+				},
+				{
+					"filename": "Button Purple",
+					"region": {
+						"x": 4,
+						"y": 960,
+						"w": 488,
+						"h": 196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -3,
+						"h": -1
+					}
+				},
+				{
+					"filename": "Button Red",
+					"region": {
+						"x": 496,
+						"y": 964,
+						"w": 488,
+						"h": 196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -3,
+						"h": -1
+					}
+				},
+				{
+					"filename": "Button Violet",
+					"region": {
+						"x": 4,
+						"y": 1160,
+						"w": 488,
+						"h": 196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -3,
+						"h": -1
+					}
+				},
+				{
+					"filename": "Button Yellow",
+					"region": {
+						"x": 496,
+						"y": 1164,
+						"w": 488,
+						"h": 196
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -3,
+						"h": -1
+					}
+				},
+				{
+					"filename": "Small Square Button Green",
+					"region": {
+						"x": 4,
+						"y": 1364,
+						"w": 140,
+						"h": 152
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -2,
+						"h": -3
+					}
+				},
+				{
+					"filename": "Small Square Button Orange",
+					"region": {
+						"x": 4,
+						"y": 1520,
+						"w": 140,
+						"h": 152
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -2,
+						"h": -3
+					}
+				},
+				{
+					"filename": "Small Square Button Pink",
+					"region": {
+						"x": 148,
+						"y": 1364,
+						"w": 140,
+						"h": 152
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -2,
+						"h": -3
+					}
+				},
+				{
+					"filename": "Small Square Button Purple",
+					"region": {
+						"x": 148,
+						"y": 1520,
+						"w": 140,
+						"h": 152
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -2,
+						"h": -3
+					}
+				},
+				{
+					"filename": "Switch On Pink",
+					"region": {
+						"x": 292,
+						"y": 1360,
+						"w": 160,
+						"h": 76
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": -2
+					}
+				},
+				{
+					"filename": "Small Square Button Red",
+					"region": {
+						"x": 292,
+						"y": 1440,
+						"w": 140,
+						"h": 152
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -2,
+						"h": -3
+					}
+				},
+				{
+					"filename": "Switch On Purple",
+					"region": {
+						"x": 292,
+						"y": 1596,
+						"w": 160,
+						"h": 76
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": -2
+					}
+				},
+				{
+					"filename": "Small Square Button Violet",
+					"region": {
+						"x": 436,
+						"y": 1440,
+						"w": 140,
+						"h": 152
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -2,
+						"h": -3
+					}
+				},
+				{
+					"filename": "Switch On Red",
+					"region": {
+						"x": 456,
+						"y": 1596,
+						"w": 160,
+						"h": 76
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": -2
+					}
+				},
+				{
+					"filename": "Toggle Fill Blue",
+					"region": {
+						"x": 456,
+						"y": 1364,
+						"w": 56,
+						"h": 56
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -2,
+						"h": -2
+					}
+				},
+				{
+					"filename": "Toggle Fill Green",
+					"region": {
+						"x": 516,
+						"y": 1364,
+						"w": 56,
+						"h": 56
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -2,
+						"h": -2
+					}
+				},
+				{
+					"filename": "Toggle Fill Orange",
+					"region": {
+						"x": 576,
+						"y": 1364,
+						"w": 56,
+						"h": 56
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -2,
+						"h": -2
+					}
+				},
+				{
+					"filename": "Small Square Button Yellow",
+					"region": {
+						"x": 580,
+						"y": 1424,
+						"w": 140,
+						"h": 152
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -2,
+						"h": -3
+					}
+				},
+				{
+					"filename": "Toggle Fill Pink",
+					"region": {
+						"x": 636,
+						"y": 1364,
+						"w": 56,
+						"h": 56
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -2,
+						"h": -2
+					}
+				},
+				{
+					"filename": "Toggle Fill Purple",
+					"region": {
+						"x": 696,
+						"y": 1364,
+						"w": 56,
+						"h": 56
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -2,
+						"h": -2
+					}
+				},
+				{
+					"filename": "Handle Blue",
+					"region": {
+						"x": 620,
+						"y": 1580,
+						"w": 44,
+						"h": 80
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -1,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Handle Green",
+					"region": {
+						"x": 668,
+						"y": 1580,
+						"w": 44,
+						"h": 80
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -1,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Handle Orange",
+					"region": {
+						"x": 716,
+						"y": 1580,
+						"w": 44,
+						"h": 80
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -1,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Handle Pink",
+					"region": {
+						"x": 724,
+						"y": 1424,
+						"w": 44,
+						"h": 80
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -1,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Toggle Fill Red",
+					"region": {
+						"x": 756,
+						"y": 1364,
+						"w": 56,
+						"h": 56
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -2,
+						"h": -2
+					}
+				},
+				{
+					"filename": "Toggle Fill Violet",
+					"region": {
+						"x": 724,
+						"y": 1508,
+						"w": 56,
+						"h": 56
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -2,
+						"h": -2
+					}
+				},
+				{
+					"filename": "Handle Purple",
+					"region": {
+						"x": 772,
+						"y": 1424,
+						"w": 44,
+						"h": 80
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -1,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Toggle Fill Yellow",
+					"region": {
+						"x": 816,
+						"y": 1364,
+						"w": 56,
+						"h": 56
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -2,
+						"h": -2
+					}
+				},
+				{
+					"filename": "Handle Red",
+					"region": {
+						"x": 764,
+						"y": 1568,
+						"w": 44,
+						"h": 80
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -1,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Switch On Violet",
+					"region": {
+						"x": 820,
+						"y": 1424,
+						"w": 160,
+						"h": 76
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": -2
+					}
+				},
+				{
+					"filename": "Switch On Yellow",
+					"region": {
+						"x": 820,
+						"y": 1504,
+						"w": 160,
+						"h": 76
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": -2
+					}
+				},
+				{
+					"filename": "Handle Violet",
+					"region": {
+						"x": 812,
+						"y": 1584,
+						"w": 44,
+						"h": 80
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -1,
+						"h": 0
+					}
+				},
+				{
+					"filename": "Handle Yellow",
+					"region": {
+						"x": 860,
+						"y": 1584,
+						"w": 44,
+						"h": 80
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": -1,
+						"h": 0
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:deecbb599e889b599fd003f371e52f99:a9d6d4cc4455b162249717f03399f92a:dace4166087f2dd855b7d501abd1211e$"
+	}
+}

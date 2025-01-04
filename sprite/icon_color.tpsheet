@@ -1,0 +1,1595 @@
+{
+	"textures": [
+		{
+			"image": "icon_color.png",
+			"size": {
+				"w": 2035,
+				"h": 617
+			},
+			"sprites": [
+				{
+					"filename": "meat.png",
+					"region": {
+						"x": 1,
+						"y": 1,
+						"w": 128,
+						"h": 128
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "notepad.png",
+					"region": {
+						"x": 1,
+						"y": 131,
+						"w": 128,
+						"h": 128
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "shield blue.png",
+					"region": {
+						"x": 131,
+						"y": 1,
+						"w": 128,
+						"h": 128
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "shield green.png",
+					"region": {
+						"x": 1,
+						"y": 261,
+						"w": 128,
+						"h": 128
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Store 1.png",
+					"region": {
+						"x": 131,
+						"y": 131,
+						"w": 128,
+						"h": 128
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Store 2.png",
+					"region": {
+						"x": 261,
+						"y": 1,
+						"w": 128,
+						"h": 128
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "target.png",
+					"region": {
+						"x": 1,
+						"y": 391,
+						"w": 128,
+						"h": 128
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Mail.png",
+					"region": {
+						"x": 131,
+						"y": 261,
+						"w": 128,
+						"h": 127
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 1
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Sound.png",
+					"region": {
+						"x": 261,
+						"y": 131,
+						"w": 128,
+						"h": 127
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 0,
+						"h": 1
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Coin.png",
+					"region": {
+						"x": 391,
+						"y": 1,
+						"w": 126,
+						"h": 128
+					},
+					"margin": {
+						"x": 1,
+						"y": 0,
+						"w": 2,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "orange.png",
+					"region": {
+						"x": 131,
+						"y": 390,
+						"w": 126,
+						"h": 128
+					},
+					"margin": {
+						"x": 1,
+						"y": 0,
+						"w": 2,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "camera.png",
+					"region": {
+						"x": 131,
+						"y": 520,
+						"w": 128,
+						"h": 96
+					},
+					"margin": {
+						"x": 0,
+						"y": 16,
+						"w": 0,
+						"h": 32
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Gem 2 Blue.png",
+					"region": {
+						"x": 1,
+						"y": 521,
+						"w": 128,
+						"h": 94
+					},
+					"margin": {
+						"x": 0,
+						"y": 17,
+						"w": 0,
+						"h": 34
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Settings.png",
+					"region": {
+						"x": 261,
+						"y": 260,
+						"w": 126,
+						"h": 128
+					},
+					"margin": {
+						"x": 1,
+						"y": 0,
+						"w": 2,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Close.png",
+					"region": {
+						"x": 259,
+						"y": 390,
+						"w": 124,
+						"h": 128
+					},
+					"margin": {
+						"x": 2,
+						"y": 0,
+						"w": 4,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Dark Gem.png",
+					"region": {
+						"x": 261,
+						"y": 520,
+						"w": 128,
+						"h": 96
+					},
+					"margin": {
+						"x": 0,
+						"y": 16,
+						"w": 0,
+						"h": 32
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "water melon.png",
+					"region": {
+						"x": 519,
+						"y": 1,
+						"w": 127,
+						"h": 127
+					},
+					"margin": {
+						"x": 0,
+						"y": 0,
+						"w": 1,
+						"h": 1
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Star Dark.png",
+					"region": {
+						"x": 648,
+						"y": 1,
+						"w": 128,
+						"h": 124
+					},
+					"margin": {
+						"x": 0,
+						"y": 2,
+						"w": 0,
+						"h": 4
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Star.png",
+					"region": {
+						"x": 778,
+						"y": 1,
+						"w": 128,
+						"h": 124
+					},
+					"margin": {
+						"x": 0,
+						"y": 2,
+						"w": 0,
+						"h": 4
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Touch.png",
+					"region": {
+						"x": 391,
+						"y": 131,
+						"w": 124,
+						"h": 128
+					},
+					"margin": {
+						"x": 2,
+						"y": 0,
+						"w": 4,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Shield.png",
+					"region": {
+						"x": 908,
+						"y": 1,
+						"w": 128,
+						"h": 122
+					},
+					"margin": {
+						"x": 0,
+						"y": 3,
+						"w": 0,
+						"h": 6
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Check.png",
+					"region": {
+						"x": 1038,
+						"y": 1,
+						"w": 128,
+						"h": 119
+					},
+					"margin": {
+						"x": 0,
+						"y": 6,
+						"w": 0,
+						"h": 9
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Film.png",
+					"region": {
+						"x": 1168,
+						"y": 1,
+						"w": 128,
+						"h": 119
+					},
+					"margin": {
+						"x": 0,
+						"y": 5,
+						"w": 0,
+						"h": 9
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "pot of gold.png",
+					"region": {
+						"x": 389,
+						"y": 261,
+						"w": 122,
+						"h": 128
+					},
+					"margin": {
+						"x": 3,
+						"y": 0,
+						"w": 6,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Rank.png",
+					"region": {
+						"x": 1298,
+						"y": 1,
+						"w": 122,
+						"h": 128
+					},
+					"margin": {
+						"x": 3,
+						"y": 0,
+						"w": 6,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Bag.png",
+					"region": {
+						"x": 1422,
+						"y": 1,
+						"w": 118,
+						"h": 128
+					},
+					"margin": {
+						"x": 5,
+						"y": 0,
+						"w": 10,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Trash.png",
+					"region": {
+						"x": 1542,
+						"y": 1,
+						"w": 118,
+						"h": 128
+					},
+					"margin": {
+						"x": 5,
+						"y": 0,
+						"w": 10,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Battery.png",
+					"region": {
+						"x": 1662,
+						"y": 1,
+						"w": 116,
+						"h": 128
+					},
+					"margin": {
+						"x": 6,
+						"y": 0,
+						"w": 12,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Gold Key.png",
+					"region": {
+						"x": 1780,
+						"y": 1,
+						"w": 116,
+						"h": 128
+					},
+					"margin": {
+						"x": 6,
+						"y": 0,
+						"w": 12,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "leaf.png",
+					"region": {
+						"x": 1898,
+						"y": 1,
+						"w": 116,
+						"h": 128
+					},
+					"margin": {
+						"x": 6,
+						"y": 0,
+						"w": 12,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Heart Dark.png",
+					"region": {
+						"x": 385,
+						"y": 391,
+						"w": 128,
+						"h": 112
+					},
+					"margin": {
+						"x": 0,
+						"y": 8,
+						"w": 0,
+						"h": 16
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Left.png",
+					"region": {
+						"x": 391,
+						"y": 505,
+						"w": 128,
+						"h": 111
+					},
+					"margin": {
+						"x": 0,
+						"y": 9,
+						"w": 0,
+						"h": 17
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "apple green.png",
+					"region": {
+						"x": 513,
+						"y": 261,
+						"w": 115,
+						"h": 128
+					},
+					"margin": {
+						"x": 7,
+						"y": 0,
+						"w": 13,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "apple red.png",
+					"region": {
+						"x": 517,
+						"y": 131,
+						"w": 115,
+						"h": 128
+					},
+					"margin": {
+						"x": 7,
+						"y": 0,
+						"w": 13,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Heart.png",
+					"region": {
+						"x": 515,
+						"y": 391,
+						"w": 128,
+						"h": 112
+					},
+					"margin": {
+						"x": 0,
+						"y": 8,
+						"w": 0,
+						"h": 16
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Right.png",
+					"region": {
+						"x": 521,
+						"y": 505,
+						"w": 128,
+						"h": 111
+					},
+					"margin": {
+						"x": 0,
+						"y": 9,
+						"w": 0,
+						"h": 17
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "axe.png",
+					"region": {
+						"x": 630,
+						"y": 261,
+						"w": 112,
+						"h": 128
+					},
+					"margin": {
+						"x": 8,
+						"y": 0,
+						"w": 16,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Dice.png",
+					"region": {
+						"x": 634,
+						"y": 131,
+						"w": 114,
+						"h": 128
+					},
+					"margin": {
+						"x": 7,
+						"y": 0,
+						"w": 14,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Silver Key.png",
+					"region": {
+						"x": 750,
+						"y": 127,
+						"w": 116,
+						"h": 128
+					},
+					"margin": {
+						"x": 6,
+						"y": 0,
+						"w": 12,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Trophy.png",
+					"region": {
+						"x": 645,
+						"y": 391,
+						"w": 128,
+						"h": 112
+					},
+					"margin": {
+						"x": 0,
+						"y": 8,
+						"w": 0,
+						"h": 16
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Clock.png",
+					"region": {
+						"x": 651,
+						"y": 505,
+						"w": 128,
+						"h": 104
+					},
+					"margin": {
+						"x": 0,
+						"y": 12,
+						"w": 0,
+						"h": 24
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Badge.png",
+					"region": {
+						"x": 868,
+						"y": 127,
+						"w": 100,
+						"h": 128
+					},
+					"margin": {
+						"x": 14,
+						"y": 0,
+						"w": 28,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Bomb.png",
+					"region": {
+						"x": 970,
+						"y": 125,
+						"w": 104,
+						"h": 128
+					},
+					"margin": {
+						"x": 12,
+						"y": 0,
+						"w": 24,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Lock 2.png",
+					"region": {
+						"x": 1076,
+						"y": 122,
+						"w": 114,
+						"h": 128
+					},
+					"margin": {
+						"x": 7,
+						"y": 0,
+						"w": 14,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Ice Cream.png",
+					"region": {
+						"x": 1192,
+						"y": 122,
+						"w": 104,
+						"h": 128
+					},
+					"margin": {
+						"x": 12,
+						"y": 0,
+						"w": 24,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Magnet.png",
+					"region": {
+						"x": 1298,
+						"y": 131,
+						"w": 114,
+						"h": 128
+					},
+					"margin": {
+						"x": 7,
+						"y": 0,
+						"w": 14,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Sack Of Coin.png",
+					"region": {
+						"x": 1414,
+						"y": 131,
+						"w": 114,
+						"h": 128
+					},
+					"margin": {
+						"x": 7,
+						"y": 0,
+						"w": 14,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Stop.png",
+					"region": {
+						"x": 1530,
+						"y": 131,
+						"w": 114,
+						"h": 128
+					},
+					"margin": {
+						"x": 7,
+						"y": 0,
+						"w": 14,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Potion Green.png",
+					"region": {
+						"x": 1646,
+						"y": 131,
+						"w": 112,
+						"h": 128
+					},
+					"margin": {
+						"x": 8,
+						"y": 0,
+						"w": 16,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Potion Red.png",
+					"region": {
+						"x": 1760,
+						"y": 131,
+						"w": 112,
+						"h": 128
+					},
+					"margin": {
+						"x": 8,
+						"y": 0,
+						"w": 16,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Potion Violet.png",
+					"region": {
+						"x": 1874,
+						"y": 131,
+						"w": 112,
+						"h": 128
+					},
+					"margin": {
+						"x": 8,
+						"y": 0,
+						"w": 16,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Book.png",
+					"region": {
+						"x": 744,
+						"y": 261,
+						"w": 102,
+						"h": 128
+					},
+					"margin": {
+						"x": 13,
+						"y": 0,
+						"w": 26,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Skull.png",
+					"region": {
+						"x": 848,
+						"y": 257,
+						"w": 112,
+						"h": 128
+					},
+					"margin": {
+						"x": 8,
+						"y": 0,
+						"w": 16,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Return.png",
+					"region": {
+						"x": 775,
+						"y": 391,
+						"w": 128,
+						"h": 104
+					},
+					"margin": {
+						"x": 0,
+						"y": 12,
+						"w": 0,
+						"h": 24
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Messages.png",
+					"region": {
+						"x": 781,
+						"y": 497,
+						"w": 128,
+						"h": 100
+					},
+					"margin": {
+						"x": 0,
+						"y": 14,
+						"w": 0,
+						"h": 28
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Dark Coins.png",
+					"region": {
+						"x": 905,
+						"y": 387,
+						"w": 128,
+						"h": 98
+					},
+					"margin": {
+						"x": 0,
+						"y": 15,
+						"w": 0,
+						"h": 30
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Hammer.png",
+					"region": {
+						"x": 911,
+						"y": 487,
+						"w": 110,
+						"h": 128
+					},
+					"margin": {
+						"x": 9,
+						"y": 0,
+						"w": 18,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Down.png",
+					"region": {
+						"x": 962,
+						"y": 257,
+						"w": 102,
+						"h": 128
+					},
+					"margin": {
+						"x": 13,
+						"y": 0,
+						"w": 26,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Energy.png",
+					"region": {
+						"x": 1023,
+						"y": 487,
+						"w": 92,
+						"h": 128
+					},
+					"margin": {
+						"x": 18,
+						"y": 0,
+						"w": 36,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Stack Coin.png",
+					"region": {
+						"x": 1035,
+						"y": 387,
+						"w": 128,
+						"h": 98
+					},
+					"margin": {
+						"x": 0,
+						"y": 15,
+						"w": 0,
+						"h": 30
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Gem 1 Blue.png",
+					"region": {
+						"x": 1117,
+						"y": 487,
+						"w": 108,
+						"h": 128
+					},
+					"margin": {
+						"x": 10,
+						"y": 0,
+						"w": 20,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Gem 1 Green.png",
+					"region": {
+						"x": 1066,
+						"y": 255,
+						"w": 108,
+						"h": 128
+					},
+					"margin": {
+						"x": 10,
+						"y": 0,
+						"w": 20,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Gem 1 Purple.png",
+					"region": {
+						"x": 1176,
+						"y": 252,
+						"w": 108,
+						"h": 128
+					},
+					"margin": {
+						"x": 10,
+						"y": 0,
+						"w": 20,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Ticket.png",
+					"region": {
+						"x": 1286,
+						"y": 261,
+						"w": 128,
+						"h": 98
+					},
+					"margin": {
+						"x": 0,
+						"y": 15,
+						"w": 0,
+						"h": 30
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Gem.png",
+					"region": {
+						"x": 1416,
+						"y": 261,
+						"w": 128,
+						"h": 96
+					},
+					"margin": {
+						"x": 0,
+						"y": 16,
+						"w": 0,
+						"h": 32
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Gem 2 Purple.png",
+					"region": {
+						"x": 1546,
+						"y": 261,
+						"w": 128,
+						"h": 94
+					},
+					"margin": {
+						"x": 0,
+						"y": 17,
+						"w": 0,
+						"h": 34
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Crown 1.png",
+					"region": {
+						"x": 1676,
+						"y": 261,
+						"w": 128,
+						"h": 93
+					},
+					"margin": {
+						"x": 0,
+						"y": 18,
+						"w": 0,
+						"h": 35
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Box.png",
+					"region": {
+						"x": 1806,
+						"y": 261,
+						"w": 128,
+						"h": 92
+					},
+					"margin": {
+						"x": 0,
+						"y": 18,
+						"w": 0,
+						"h": 36
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Cash.png",
+					"region": {
+						"x": 1286,
+						"y": 361,
+						"w": 128,
+						"h": 90
+					},
+					"margin": {
+						"x": 0,
+						"y": 19,
+						"w": 0,
+						"h": 38
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Crown 2.png",
+					"region": {
+						"x": 1416,
+						"y": 359,
+						"w": 128,
+						"h": 92
+					},
+					"margin": {
+						"x": 0,
+						"y": 18,
+						"w": 0,
+						"h": 36
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Gift.png",
+					"region": {
+						"x": 1546,
+						"y": 357,
+						"w": 106,
+						"h": 128
+					},
+					"margin": {
+						"x": 11,
+						"y": 0,
+						"w": 22,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Goal.png",
+					"region": {
+						"x": 1654,
+						"y": 357,
+						"w": 90,
+						"h": 128
+					},
+					"margin": {
+						"x": 19,
+						"y": 0,
+						"w": 38,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Gold Lock.png",
+					"region": {
+						"x": 1746,
+						"y": 356,
+						"w": 96,
+						"h": 128
+					},
+					"margin": {
+						"x": 16,
+						"y": 0,
+						"w": 32,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Magnifying Glass.png",
+					"region": {
+						"x": 1844,
+						"y": 355,
+						"w": 102,
+						"h": 128
+					},
+					"margin": {
+						"x": 13,
+						"y": 0,
+						"w": 26,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Hour Glass.png",
+					"region": {
+						"x": 1948,
+						"y": 261,
+						"w": 86,
+						"h": 128
+					},
+					"margin": {
+						"x": 21,
+						"y": 0,
+						"w": 42,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Map.png",
+					"region": {
+						"x": 1227,
+						"y": 453,
+						"w": 106,
+						"h": 128
+					},
+					"margin": {
+						"x": 11,
+						"y": 0,
+						"w": 22,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Up.png",
+					"region": {
+						"x": 1335,
+						"y": 453,
+						"w": 104,
+						"h": 128
+					},
+					"margin": {
+						"x": 12,
+						"y": 0,
+						"w": 24,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Sword.png",
+					"region": {
+						"x": 1441,
+						"y": 453,
+						"w": 100,
+						"h": 128
+					},
+					"margin": {
+						"x": 14,
+						"y": 0,
+						"w": 28,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Silver Lock.png",
+					"region": {
+						"x": 1543,
+						"y": 487,
+						"w": 96,
+						"h": 128
+					},
+					"margin": {
+						"x": 16,
+						"y": 0,
+						"w": 32,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Timer.png",
+					"region": {
+						"x": 1641,
+						"y": 487,
+						"w": 96,
+						"h": 128
+					},
+					"margin": {
+						"x": 16,
+						"y": 0,
+						"w": 32,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "map pointer.png",
+					"region": {
+						"x": 1739,
+						"y": 487,
+						"w": 94,
+						"h": 128
+					},
+					"margin": {
+						"x": 17,
+						"y": 0,
+						"w": 34,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Medal.png",
+					"region": {
+						"x": 1835,
+						"y": 486,
+						"w": 94,
+						"h": 128
+					},
+					"margin": {
+						"x": 17,
+						"y": 0,
+						"w": 34,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "Pencil.png",
+					"region": {
+						"x": 1931,
+						"y": 485,
+						"w": 92,
+						"h": 128
+					},
+					"margin": {
+						"x": 18,
+						"y": 0,
+						"w": 36,
+						"h": 0
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:b517dfc54bdbcd3a2252e5a3e32b793d:f38e4b6d974195ba5a0457f0b02fe0be:34b266dd2dc25eb2d99a01e0f530154c$"
+	}
+}
