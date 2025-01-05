@@ -1,7 +1,9 @@
 using System;
 using Godot;
 
-namespace Dolphin.Game {
-	public partial class UIFirst : Control {
-	}
+namespace Dolphin.Game
+{
+    public partial class UIFirst
+    {
+    }
 }

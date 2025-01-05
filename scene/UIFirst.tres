@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=2 format=3 uid="uid://di24t5g2gjx5o"]
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://uqx3oxkchnbt"]
 
 [ext_resource type="Script" path="res://addons/DolphinUI/script/UIBindRes.cs" id="1_juljr"]
 
@@ -7,18 +7,22 @@ script = ExtResource("1_juljr")
 Map = {
 "MenuButton": {
 "TYPE_FULL_NAME": "Godot.MenuButton",
-"TYPE_IS_CUSTOM": "FALSE"
+"TYPE_IS_CUSTOM": "FALSE",
+"TYPE_PARENT_NODE_PATH": "",
+"TYPE_SELF": "MenuButton"
 },
 "TextureButton": {
 "TYPE_FULL_NAME": "Dolphin.Game.TestA",
 "TYPE_IS_CUSTOM": "TRUE",
-"TYPE_PARENT_NODE_PATH": ""
+"TYPE_PARENT_NODE_PATH": "",
+"TYPE_SELF": "TextureButton"
 },
 "TextureButton/TextureRect": {
 "TYPE_FULL_NAME": "Dolphin.Game.TestB",
 "TYPE_IS_CUSTOM": "TRUE",
 "TYPE_PARENT": "Dolphin.Game.TestA",
-"TYPE_PARENT_NODE_PATH": "TextureButton"
+"TYPE_PARENT_NODE_PATH": "TextureButton",
+"TYPE_SELF": "TextureRect"
 }
 }
 CustomTypeMap = {

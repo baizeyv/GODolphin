@@ -24,6 +24,10 @@ public partial class UIBindRes : Resource
     /// </summary>
     private Dictionary<string, Array<Dictionary>> _arrangeMap;
 
+    private Dictionary<string, string> _arrangeExtendMap;
+
+    private Dictionary<string, string> _arrangeNodePathMap;
+
     private string _mainTypeName;
 
     public void Generate(string scenePath)
@@ -43,6 +47,8 @@ public partial class UIBindRes : Resource
     private void Arrange()
     {
         _arrangeMap = new();
+        _arrangeExtendMap = new();
+        _arrangeNodePathMap = new();
         foreach (var kvp in Map)
         {
             var dic = kvp.Value;
@@ -63,6 +69,16 @@ public partial class UIBindRes : Resource
                 if (!_arrangeMap.ContainsKey(type))
                 {
                     _arrangeMap.Add(type, new());
+                }
+
+                if (!_arrangeExtendMap.ContainsKey(type))
+                {
+                    _arrangeExtendMap.Add(type, dic[GODolphinConst.TYPE_SELF]);
+                }
+
+                if (!_arrangeNodePathMap.ContainsKey(type))
+                {
+                    _arrangeNodePathMap.Add(type, kvp.Key);
                 }
             }
 
@@ -92,6 +108,16 @@ public partial class UIBindRes : Resource
                         array.Add(info);
                         _arrangeMap.Add(type, array);
                     }
+
+                    if (!_arrangeExtendMap.ContainsKey(type))
+                    {
+                        _arrangeExtendMap.Add(type, dic[GODolphinConst.TYPE_SELF]);
+                    }
+
+                    if (!_arrangeNodePathMap.ContainsKey(type))
+                    {
+                        _arrangeNodePathMap.Add(type, kvp.Key);
+                    }
                 }
                 else
                 {
@@ -112,6 +138,16 @@ public partial class UIBindRes : Resource
                         Array<Dictionary> array = new();
                         array.Add(info);
                         _arrangeMap.Add(parentFullType, array);
+                    }
+
+                    if (!_arrangeExtendMap.ContainsKey(parentFullType))
+                    {
+                        _arrangeExtendMap.Add(parentFullType, dic[GODolphinConst.TYPE_SELF]);
+                    }
+
+                    if (!_arrangeNodePathMap.ContainsKey(parentFullType))
+                    {
+                        _arrangeNodePathMap.Add(parentFullType, kvp.Key);
                     }
                 }
             }
@@ -157,6 +193,7 @@ public partial class UIBindRes : Resource
                     dic.Add(GODolphinConst.TYPE_PARENT, parentInfo[GODolphinConst.TYPE_FULL_NAME]);
                     dic.Add(GODolphinConst.TYPE_IS_CUSTOM, info[GODolphinConst.TYPE_IS_CUSTOM]);
                     dic.Add(GODolphinConst.TYPE_PARENT_NODE_PATH, parentNodePath);
+                    dic.Add(GODolphinConst.TYPE_SELF, info[GODolphinConst.TYPE_SELF]);
                     Map[nodePath] = dic;
                 }
                 else
@@ -164,6 +201,7 @@ public partial class UIBindRes : Resource
                     Dictionary<string, string> dic = new();
                     dic.Add(GODolphinConst.TYPE_FULL_NAME, info[GODolphinConst.TYPE_FULL_NAME]);
                     dic.Add(GODolphinConst.TYPE_IS_CUSTOM, info[GODolphinConst.TYPE_IS_CUSTOM]);
+                    dic.Add(GODolphinConst.TYPE_SELF, info[GODolphinConst.TYPE_SELF]);
                     dic.Add(GODolphinConst.TYPE_PARENT_NODE_PATH, "");
                     Map[nodePath] = dic;
                 }
@@ -235,13 +273,27 @@ public partial class UIBindRes : Resource
             {
                 var mainFile = "res://" + scriptPath + typeName + ".cs";
                 var designerFile = "res://" + scriptPath + typeName + ".Designer.cs";
-                GenerateFile(typeName, mainFile, designerFile, nameSpace, val);
+                if (_arrangeExtendMap.TryGetValue(kvp.Key, out var v))
+                {
+                    GenerateFile(typeName, mainFile, designerFile, nameSpace, val, v);
+                }
+                else
+                {
+                    GenerateFile(typeName, mainFile, designerFile, nameSpace, val, "Control");
+                }
             }
             else
             {
                 var mainFile = "res://" + scriptPath + _mainTypeName + "/" + typeName + ".cs";
                 var designerFile = "res://" + scriptPath + _mainTypeName + "/" + typeName + ".Designer.cs";
-                GenerateFile(typeName, mainFile, designerFile, nameSpace, val);
+                if (_arrangeExtendMap.TryGetValue(kvp.Key, out var v))
+                {
+                    GenerateFile(typeName, mainFile, designerFile, nameSpace, val, v);
+                }
+                else
+                {
+                    GenerateFile(typeName, mainFile, designerFile, nameSpace, val, "Control");
+                }
             }
         }
     }
@@ -250,12 +302,12 @@ public partial class UIBindRes : Resource
     /// * 生成文件
     /// </summary>
     private void GenerateFile(string typeName, string scriptFilePath, string designerFilePath, string nameSpace,
-        Array<Dictionary> exportPropertyArray)
+        Array<Dictionary> exportPropertyArray, string extendType)
     {
         // * 生成主文件
         GenerateMainFile(scriptFilePath, nameSpace, typeName);
         // * 生成设计文件
-        GenerateDesignerFile(designerFilePath, nameSpace, typeName, exportPropertyArray);
+        GenerateDesignerFile(designerFilePath, nameSpace, typeName, exportPropertyArray, extendType);
     }
 
     /// <summary>
@@ -278,11 +330,11 @@ public partial class UIBindRes : Resource
     }
 
     private void GenerateDesignerFile(string designerFilePath, string nameSpace, string type,
-        Array<Dictionary> exportPropertyArray)
+        Array<Dictionary> exportPropertyArray, string extendType)
     {
         var file = FileAccess.Open(designerFilePath, FileAccess.ModeFlags.Write);
         var content =
-            $"using System;\nusing Godot;\n\nnamespace {nameSpace} {{\n\tpublic partial class {type} : Control {{\n";
+            $"using System;\nusing Godot;\n\nnamespace {nameSpace} {{\n\tpublic partial class {type} : {extendType} {{\n";
         foreach (var exportProperty in exportPropertyArray)
         {
             var nodeName = (string)exportProperty[GODolphinConst.KEY_NODE_NAME];
@@ -355,10 +407,9 @@ public partial class UIBindRes : Resource
             }
 
             var arr = kvp.Value;
-            foreach (var item in arr)
+            if (arr == null || arr.Count == 0)
             {
-                // TODO:
-                var parentNodePath = (string)item[GODolphinConst.KEY_PARENT_NODE_PATH];
+                var parentNodePath = (string)_arrangeNodePathMap[kvp.Key];
                 Node parentNode;
                 if (string.IsNullOrEmpty(parentNodePath))
                 {
@@ -368,16 +419,39 @@ public partial class UIBindRes : Resource
                 {
                     parentNode = root.GetNodeOrNull(parentNodePath);
                 }
+
                 var script = GD.Load<Script>(mainFile);
                 if ((Script)parentNode.GetScript() != script)
                 {
                     parentNode.SetScript(script);
                 }
+            }
+            else
+            {
+                foreach (var item in arr)
+                {
+                    var parentNodePath = (string)item[GODolphinConst.KEY_PARENT_NODE_PATH];
+                    Node parentNode;
+                    if (string.IsNullOrEmpty(parentNodePath))
+                    {
+                        parentNode = root;
+                    }
+                    else
+                    {
+                        parentNode = root.GetNodeOrNull(parentNodePath);
+                    }
 
-                var nodeName = (string)item[GODolphinConst.KEY_NODE_NAME];
-                var nodePath = (string)item[GODolphinConst.KEY_NODE_PATH];
-                var curNode = root.GetNodeOrNull(nodePath);
-                parentNode.Set(nodeName, curNode);
+                    var script = GD.Load<Script>(mainFile);
+                    if ((Script)parentNode.GetScript() != script)
+                    {
+                        parentNode.SetScript(script);
+                    }
+
+                    var nodeName = (string)item[GODolphinConst.KEY_NODE_NAME];
+                    var nodePath = (string)item[GODolphinConst.KEY_NODE_PATH];
+                    var curNode = root.GetNodeOrNull(nodePath);
+                    parentNode.Set(nodeName, curNode);
+                }
             }
         }
     }

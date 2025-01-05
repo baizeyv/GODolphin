@@ -132,6 +132,7 @@ public partial class UIEditorWindow : Control
                 Dictionary<string, string> dic = new();
                 dic.Add(GODolphinConst.TYPE_FULL_NAME, typeString);
                 dic.Add(GODolphinConst.TYPE_IS_CUSTOM, GODolphinConst.TRUE_STRING);
+                dic.Add(GODolphinConst.TYPE_SELF, _nodeMap[nodePath].GetType().Name);
                 _bindMap.Add(nodePath, dic);
                 _customTypeMap.Add(typeString, nodePath);
                 item.SetText(2, typeString);
@@ -261,6 +262,7 @@ public partial class UIEditorWindow : Control
                             Dictionary<string, string> dic = new();
                             dic.Add(GODolphinConst.TYPE_FULL_NAME, typeString);
                             dic.Add(GODolphinConst.TYPE_IS_CUSTOM, GODolphinConst.FALSE_STRING);
+                            dic.Add(GODolphinConst.TYPE_SELF, _nodeMap[nodePath].GetType().Name);
                             _bindMap.Add(nodePath, dic);
                             item.SetText(2, typeString);
                             item.SetIcon(0, BoundTexture);

@@ -21,6 +21,8 @@ public partial class GODolphinConst
 
     public static readonly string TYPE_PARENT_NODE_PATH = "TYPE_PARENT_NODE_PATH";
 
+    public static readonly string TYPE_SELF = "TYPE_SELF";
+
     //////////////////////////////////////////////////
 
     public static readonly string TRUE_STRING = "TRUE";

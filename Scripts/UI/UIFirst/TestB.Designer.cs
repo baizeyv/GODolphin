@@ -2,7 +2,7 @@ using System;
 using Godot;
 
 namespace Dolphin.Game {
-	public partial class TestB : Control {
+	public partial class TestB : TextureRect {
 
 	}
 }
