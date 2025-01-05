@@ -2,3 +2,12 @@
 .godot/
 .idea/
 /android/
+script/
+Scripts/
+scene/
+GODolphin.sln
+GODolphin.csproj
+GODolphin.sln.DotSettings.user
+icon.svg
+icon.svg.import
+project.godot
