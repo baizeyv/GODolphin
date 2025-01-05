@@ -13,6 +13,7 @@
 * [Resource Module](#resource-module)
 * [Singleton Module](#singleton-module)
 * [State Machine Module](#state-machine-module)
+* [UI Module](#ui-module)
 * [How To Install](#how-to-install)
 
 ## Introduce
