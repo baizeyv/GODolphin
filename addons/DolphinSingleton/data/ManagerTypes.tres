@@ -1,7 +1,7 @@
 [gd_resource type="Resource" load_steps=2 format=3 uid="uid://d3wj7jemh1wey"]
 
-[ext_resource type="Script" path="res://addons/DolphinSingleton/script/SingletonResource.cs" id="1_e5or6"]
+[ext_resource type="Script" path="res://addons/DolphinSingleton/script/SingletonResource.cs" id="1_bkdxb"]
 
 [resource]
-script = ExtResource("1_e5or6")
+script = ExtResource("1_bkdxb")
 ManagerTypeArray = PackedStringArray("GODolphin.StateMachine.StateMachineManager", "GODolphin.Res.ResourceManager")

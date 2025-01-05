@@ -331,6 +331,17 @@ public partial class StateMachineExample2 : Node
 	}
 }
 ```
+## UI Module
+
+UI Editor Preview:
+
+![UIEditor.png](preview/UIEditor.png)
+
+Press `Generate` Button Can Generate UI Template Code.
+
+UI Setting Dialog:
+
+![UISettingDialog.png](preview/UISettingDialog.png)
  
 ## How to install
 
